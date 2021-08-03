@@ -1,0 +1,15 @@
+// Les mixins, sont une notion que j'utilisais très peu sur sass. Même si ceux là sont peu utilise dans ce cas précis, j'ai voulu les inclures, afin d'apprendre a travaillé avec.
+
+// HEADER 
+@mixin formColor {
+    
+    color: rgba(0, 0, 0, .7);
+    font-size: 1.2rem;
+
+}
+
+@mixin pad {
+
+    padding: 2rem 0;
+
+}

@@ -11,7 +11,7 @@ header {
 
         & h1 {
 
-            padding: 1.5rem 0;
+            @include pad;
     
             font-family: 'Shrikhand', cursive;
             font-size: 2rem;
@@ -29,10 +29,9 @@ header {
 
         & h2 {
 
-            font-size: 1.2rem;
-            color: rgba(0, 0, 0, .6);
+            @include formColor;
 
-            padding: 2rem 0;
+            @include pad;
             
         }
 
@@ -40,8 +39,7 @@ header {
 
             margin-right: .5rem;
 
-            color: rgba(0, 0, 0, .6);
-            font-size: 1.2rem;
+            @include formColor;
 
         }
 

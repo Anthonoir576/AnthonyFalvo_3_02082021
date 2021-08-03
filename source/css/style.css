@@ -19,7 +19,7 @@ header .header-title {
   box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.151);
 }
 header .header-title h1 {
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   font-family: "Shrikhand", cursive;
   font-size: 2rem;
   text-align: center;
@@ -29,13 +29,13 @@ header .header-subtitle {
   text-align: center;
 }
 header .header-subtitle h2 {
+  color: rgba(0, 0, 0, 0.7);
   font-size: 1.2rem;
-  color: rgba(0, 0, 0, 0.6);
   padding: 2rem 0;
 }
 header .header-subtitle i {
   margin-right: 0.5rem;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.7);
   font-size: 1.2rem;
 }
 
