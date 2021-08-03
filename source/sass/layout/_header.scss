@@ -12,11 +12,10 @@ header {
         & h1 {
 
             @include pad;
+            @include txtCenter;
     
             font-family: 'Shrikhand', cursive;
             font-size: 2rem;
-    
-            text-align: center;
 
         }
 
@@ -24,14 +23,16 @@ header {
 
     & .header-subtitle {
 
+        @include txtCenter;
+        
         background: $Grey;
-        text-align: center;
 
         & h2 {
 
             @include formColor;
-
             @include pad;
+
+            font-weight: 300;
             
         }
 
@@ -40,8 +41,15 @@ header {
             margin-right: .5rem;
 
             @include formColor;
-
+            
         }
+
+    }
+
+    & .header-main {
+
+        // modification de ma variable pour faire un faux effet de degradé par rapport au sous titre
+        background: rgba($Grey, .4);
 
     }
 
