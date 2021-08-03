@@ -33,7 +33,7 @@ header .header-subtitle {
 header .header-subtitle h2 {
   color: rgba(0, 0, 0, 0.7);
   font-size: 1.2rem;
-  padding: 2rem 0;
+  padding: 1.3rem 0;
   font-weight: 300;
 }
 header .header-subtitle i {
@@ -71,29 +71,46 @@ header .header-main div a {
   box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.25);
 }
 header .header-contains {
-  text-align: center;
   padding: 2rem 1rem;
   margin: 0 auto;
+}
+header .header-contains h3 {
+  margin-bottom: 1.5rem;
+  text-align: left;
+  font-size: 1.4rem;
 }
 header .header-contains .header-contains-choices {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  justify-items: center;
+  justify-items: flex-start;
 }
 header .header-contains .header-contains-choices .header-choice {
   display: flex;
   align-items: baseline;
-  padding: 15px 30px;
+  width: 100%;
+  white-space: nowrap;
+  padding: 25px 30px 25px 10px;
   margin-bottom: 1rem;
   background: #F3F3F3;
-  border-radius: 25px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 8px -7px #00000075;
 }
 header .header-contains .header-contains-choices .header-choice :nth-child(1) {
   padding: 4px 9px;
   background: #9356DC;
   border-radius: 50%;
   color: white;
+  transform: translateX(-18px) translateY(1px);
+}
+header .header-contains .header-contains-choices .header-choice i {
+  margin-right: 1rem;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.397);
+}
+header .header-contains .header-contains-choices .header-choice :nth-child(3) {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 /*# sourceMappingURL=style.css.map */

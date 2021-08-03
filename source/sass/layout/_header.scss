@@ -31,7 +31,8 @@ header {
         & h2 {
 
             @include formColor;
-            @include pad;
+            // @include pad;
+            padding: 1.3rem 0;
 
             font-weight: 300;
             
@@ -101,11 +102,20 @@ header {
 
     & .header-contains {
 
-        @include txtCenter;
+        
 
         padding: 2rem 1rem;
 
         margin: 0 auto;
+
+        & h3 {
+
+            margin-bottom: 1.5rem;
+            text-align: left;
+
+            font-size: 1.4rem;
+
+        }
 
         & .header-contains-choices {
 
@@ -113,20 +123,24 @@ header {
             grid-template-columns: 1fr;
             grid-template-rows: repeat(3, 1fr);
 
-            justify-items: center;
-            
+            justify-items: flex-start;
 
             & .header-choice {
                 
                 display: flex;
                 align-items: baseline;
 
-                padding: 15px 30px;
+                width: 100%;
+                white-space: nowrap;
+
+                padding: 25px 30px 25px 10px;
                 margin-bottom: 1rem;
 
                 background: $Grey;
-                border-radius: 25px;
+                border-radius: 20px;
 
+                box-shadow: 8px 8px 8px -7px #00000075;
+                
                 & :nth-child(1) {
 
                     padding: 4px 9px;
@@ -135,6 +149,26 @@ header {
                     border-radius: 50%;
 
                     color: white;
+
+                    // Enlever l'axe des Y si besoin, legere correction
+                    transform: translateX(-18px) translateY( 1px);
+                   
+
+                }
+
+                & i {
+
+                    margin-right: 1rem;
+                    font-size: 13px;
+
+                    color: rgba(0, 0, 0, 0.397);
+
+                }
+
+                & :nth-child(3) {
+
+                    font-weight: 500;
+                    color: rgba(0, 0, 0, 0.7);
 
                 }
 
