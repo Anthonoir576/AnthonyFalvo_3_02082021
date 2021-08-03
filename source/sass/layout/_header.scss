@@ -3,9 +3,11 @@
 header {
 
     // TITRE H1 
-    .header-title {
+    & .header-title {
 
-        box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.301) ;
+        // position relative, pour que le shadow ne soit pas masqué par le sous bloc du sous titre
+        position: relative;
+        box-shadow: 0 0 15px 2px rgba(0, 0, 0, .151) ;
 
         & h1 {
 
@@ -15,9 +17,32 @@ header {
             font-size: 2rem;
     
             text-align: center;
-    
+
+        }
+
+    }
+
+    & .header-subtitle {
+
+        background: $Grey;
+        text-align: center;
+
+        & h2 {
+
+            font-size: 1.2rem;
+            color: rgba(0, 0, 0, .6);
+
+            padding: 2rem 0;
             
-    
+        }
+
+        & i {
+
+            margin-right: .5rem;
+
+            color: rgba(0, 0, 0, .6);
+            font-size: 1.2rem;
+
         }
 
     }
