@@ -1,17 +1,27 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 |   'utils/variables',
- *   |   ^^^^^^^^^^^^^^^^^
- *   '
- *   source\sass\main.scss 2:3  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502    'utils/variables',\d\a   \2502    ^^^^^^^^^^^^^^^^^\a   \2575 \a   source\\sass\\main.scss 2:3  root stylesheet";
+/* Variables COULEURS*/
+/* RESET padding et margin, color, fontSize - BORDER BOX */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+  font-size: 16px;
 }
+
+/* POLICE 'Roboto', 'Shrikhand' */
+body {
+  font-family: "Roboto", "Shrikhand", sans-serif;
+}
+
+/* HEADER */
+header .header-title {
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.301);
+}
+header .header-title h1 {
+  padding: 1.5rem 0;
+  font-family: "Shrikhand", cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+
+/* HEADER */
+header {
+
+    // TITRE H1 
+    .header-title {
+
+        box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.301) ;
+
+        & h1 {
+
+            padding: 1.5rem 0;
+    
+            font-family: 'Shrikhand', cursive;
+            font-size: 2rem;
+    
+            text-align: center;
+    
+            
+    
+        }
+
+    }
+
+}
