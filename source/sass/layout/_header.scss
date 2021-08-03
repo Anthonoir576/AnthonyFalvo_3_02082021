@@ -99,4 +99,49 @@ header {
 
     }
 
+    & .header-contains {
+
+        @include txtCenter;
+
+        padding: 2rem 1rem;
+
+        margin: 0 auto;
+
+        & .header-contains-choices {
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+
+            justify-items: center;
+            
+
+            & .header-choice {
+                
+                display: flex;
+                align-items: baseline;
+
+                padding: 15px 30px;
+                margin-bottom: 1rem;
+
+                background: $Grey;
+                border-radius: 25px;
+
+                & :nth-child(1) {
+
+                    padding: 4px 9px;
+
+                    background: $Primaire;
+                    border-radius: 50%;
+
+                    color: white;
+
+                }
+
+            }
+
+        }
+
+    }
+
 }
