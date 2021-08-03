@@ -22,6 +22,7 @@ header .header-title {
 header .header-title h1 {
   padding: 2rem 0;
   text-align: center;
+  letter-spacing: 5px;
   font-family: "Shrikhand", cursive;
   font-size: 2rem;
 }
@@ -41,7 +42,33 @@ header .header-subtitle i {
   font-size: 1.2rem;
 }
 header .header-main {
+  padding: 3rem 1rem 1.2rem 1rem;
   background: rgba(243, 243, 243, 0.4);
+  text-align: center;
+}
+header .header-main h2 {
+  margin-bottom: 1.2rem;
+  font-size: 2rem;
+}
+header .header-main h3 {
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+header .header-main div {
+  max-width: 327px;
+  margin: 0 auto;
+}
+header .header-main div a {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  border-radius: 50px;
+  background: linear-gradient(0deg, #9356dc 10%, #ff79da 100%);
+  box-shadow: 0 1px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */

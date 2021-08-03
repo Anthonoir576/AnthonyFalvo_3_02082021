@@ -13,6 +13,7 @@ header {
 
             @include pad;
             @include txtCenter;
+            @include letter;
     
             font-family: 'Shrikhand', cursive;
             font-size: 2rem;
@@ -24,7 +25,7 @@ header {
     & .header-subtitle {
 
         @include txtCenter;
-        
+
         background: $Grey;
 
         & h2 {
@@ -48,8 +49,53 @@ header {
 
     & .header-main {
 
-        // modification de ma variable pour faire un faux effet de degradé par rapport au sous titre
+        padding: 3rem 1rem 1.2rem 1rem;
+
         background: rgba($Grey, .4);
+
+        @include txtCenter;
+
+        & h2 {
+
+            margin-bottom: 1.2rem;
+
+            font-size: 2rem;
+
+        }
+
+        & h3 {
+
+            margin-bottom: 1.2rem;
+
+            font-size: 1.1rem;
+            font-weight: 300;
+
+        }
+
+        & div {
+
+            max-width: 327px;
+            margin: 0 auto;
+
+            & a {
+
+                display: inline-block;
+                padding: 20px 40px;
+
+                font-size: 1.4rem;
+                font-weight: 600;
+                color: #fff;
+
+                white-space: nowrap;
+
+                border-radius: 50px;
+                background: linear-gradient(0deg, rgba(147,86,220,1) 10%, rgba(255,121,218,1) 100%);
+
+                box-shadow: 0 1px 15px 0px rgba(0, 0, 0, .2);
+            
+            }
+
+        }
 
     }
 

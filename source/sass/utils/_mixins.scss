@@ -19,3 +19,11 @@
     text-align: center;
 
 }
+
+
+// LETTER SPACE a désactiver lors de la soutenance 
+@mixin letter {
+
+    letter-spacing: 5px;
+
+}
