@@ -117,7 +117,7 @@ header .header-contains .header-contains-choices .header-choice :nth-child(3) {
   color: rgba(0, 0, 0, 0.7);
 }
 
-/* MAIN */
+/* MAIN, CARDS */
 main {
   background: #F3F3F3;
   padding: 2rem 1rem;
