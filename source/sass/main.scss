@@ -1,20 +1,29 @@
+
+// MIXIN VARIABLE
 @import
   'utils/variables',
   'utils/mixins';
 
 
+// RESET FONT ANIMATION 
 @import
   'base/reset',
   'base/typography',
   'base/animations';
 
 
+// DIVISON DU CONTENU DE LINDEX
 @import
   'layout/header',
   'layout/main',
   'layout/footer';
 
-  
+
+// MEDIA QUERIE
 @import
   'components/media';
 
+
+// PAGE RESTAURANT   
+@import
+  'pages/laPaletteDuGout';

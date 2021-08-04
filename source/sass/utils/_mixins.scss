@@ -10,7 +10,7 @@
 
 @mixin pad {
 
-    padding: 2rem 0;
+    padding: 1.5rem 0;
 
 }
 
@@ -24,6 +24,6 @@
 // LETTER SPACE a désactiver lors de la soutenance 
 @mixin letter {
 
-    letter-spacing: 5px;
+    letter-spacing: 1px;
 
 }
