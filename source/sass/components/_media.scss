@@ -1,0 +1,33 @@
+
+@media only screen and (min-width: 900px) {
+
+
+    /* FONCTIONNEMENT HEADER-CONTAINS */
+    header {
+
+        & .header-contains {
+
+            padding: 5rem 1rem;
+
+            & .header-contains-choices {
+
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 1fr;
+
+                grid-column-gap: 3rem;
+
+                justify-items: center;
+
+            }
+
+        }    
+
+    }
+
+    main {
+
+        
+
+    }
+
+}

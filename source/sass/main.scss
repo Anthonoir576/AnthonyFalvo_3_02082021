@@ -2,30 +2,19 @@
   'utils/variables',
   'utils/mixins';
 
-// @import
-//   'vendors/bootstrap',
-//   'vendors/jquery-ui';
 
 @import
   'base/reset',
   'base/typography',
   'base/animations';
 
+
 @import
   'layout/header',
   'layout/main',
   'layout/footer';
 
-// @import
-//   'components/buttons',
-//   'components/carousel',
-//   'components/cover',
-//   'components/dropdown';
+  
+@import
+  'components/media';
 
-// @import
-//   'pages/home',
-//   'pages/contact';
-
-// @import
-//   'themes/theme',
-//   'themes/admin';
