@@ -4,7 +4,7 @@
 
 
     /* FONCTIONNEMENT HEADER-CONTAINS */
-    header {
+    .header {
 
         & .header-contains {
 
@@ -26,7 +26,7 @@
     }
 
     /* CARTE MAIN-CONTAINS */
-    main {
+    .main {
 
         padding: 5rem 1rem;
 
@@ -51,7 +51,7 @@
     }
 
     /* FOOTER LINK */
-    footer {
+    .footer {
 
         & h2 {
 
@@ -94,7 +94,7 @@
         
     }
 
-    main {
+    .main {
         
         padding: 5rem 5rem;
     }

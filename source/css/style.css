@@ -20,51 +20,51 @@ body {
 }
 
 /* HEADER */
-header .header-title {
+.header .header-title {
   position: relative;
   box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.151);
 }
-header .header-title h1 {
-  padding: 1.5rem 0;
+.header .header-title h1 {
+  padding: 1rem 0;
   text-align: center;
   letter-spacing: 1px;
   font-family: "Shrikhand", cursive;
   font-size: 2rem;
 }
-header .header-subtitle {
+.header .header-subtitle {
   text-align: center;
   background: #F3F3F3;
 }
-header .header-subtitle h2 {
+.header .header-subtitle h2 {
   color: rgba(0, 0, 0, 0.7);
   font-size: 1.2rem;
   padding: 1.3rem 0;
   font-weight: 300;
 }
-header .header-subtitle i {
+.header .header-subtitle i {
   margin-right: 0.5rem;
   color: rgba(0, 0, 0, 0.7);
   font-size: 1.2rem;
 }
-header .header-main {
+.header .header-main {
   padding: 3rem 1rem 1.2rem 1rem;
   background: rgba(243, 243, 243, 0.4);
   text-align: center;
 }
-header .header-main h2 {
+.header .header-main h2 {
   margin-bottom: 1.2rem;
   font-size: 2rem;
 }
-header .header-main h3 {
+.header .header-main h3 {
   margin-bottom: 1.2rem;
   font-size: 1.1rem;
   font-weight: 300;
 }
-header .header-main div {
+.header .header-main div {
   max-width: 327px;
   margin: 0 auto;
 }
-header .header-main div a {
+.header .header-main div a {
   display: inline-block;
   padding: 15px 30px;
   font-size: 1.2rem;
@@ -75,23 +75,23 @@ header .header-main div a {
   background: linear-gradient(0deg, #9356dc 10%, #ff79da 100%);
   box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.25);
 }
-header .header-contains {
+.header .header-contains {
   padding: 2rem 1rem;
   margin: 0 auto;
 }
-header .header-contains h3 {
+.header .header-contains h3 {
   margin-bottom: 3rem;
   text-align: left;
   font-size: 1.5rem;
 }
-header .header-contains .header-contains-choices {
+.header .header-contains .header-contains-choices {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-row-gap: 1rem;
   justify-items: flex-start;
 }
-header .header-contains .header-contains-choices .header-choice {
+.header .header-contains .header-contains-choices .header-choice {
   display: flex;
   align-items: baseline;
   width: 100%;
@@ -101,41 +101,41 @@ header .header-contains .header-contains-choices .header-choice {
   border-radius: 20px;
   box-shadow: 8px 8px 8px -7px #00000075;
 }
-header .header-contains .header-contains-choices .header-choice :nth-child(1) {
+.header .header-contains .header-contains-choices .header-choice :nth-child(1) {
   padding: 4px 9px;
   background: #9356DC;
   border-radius: 50%;
   color: white;
   transform: translateX(-18px) translateY(1px);
 }
-header .header-contains .header-contains-choices .header-choice i {
+.header .header-contains .header-contains-choices .header-choice i {
   margin-right: 1rem;
   font-size: 13px;
   color: rgba(0, 0, 0, 0.397);
 }
-header .header-contains .header-contains-choices .header-choice :nth-child(3) {
+.header .header-contains .header-contains-choices .header-choice :nth-child(3) {
   font-weight: 500;
   color: rgba(0, 0, 0, 0.7);
 }
 
 /* MAIN, CARDS */
-main {
+.main {
   background: #F3F3F3;
   padding: 2rem 1rem;
 }
-main h2 {
+.main h2 {
   margin-bottom: 3rem;
   text-align: left;
   font-size: 1.5rem;
 }
-main .main-contains {
+.main .main-contains {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
   grid-row-gap: 50px;
   justify-items: center;
 }
-main .main-contains .card {
+.main .main-contains .card {
   margin: 0px auto;
   width: 100%;
   max-width: 950px;
@@ -143,13 +143,13 @@ main .main-contains .card {
   background-color: white;
   box-shadow: 0px 5px 20px #999;
 }
-main .main-contains .card .card-img {
+.main .main-contains .card .card-img {
   height: 250px;
   position: relative;
   overflow: hidden;
   border-radius: 25px 25px 0 0;
 }
-main .main-contains .card .card-img .card-new {
+.main .main-contains .card .card-img .card-new {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -162,37 +162,37 @@ main .main-contains .card .card-img .card-new {
   border-radius: 4px;
   box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.493);
 }
-main .main-contains .card .card-img img {
+.main .main-contains .card .card-img img {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 150%;
   transform: translate(-50%, -50%);
 }
-main .main-contains .card .card-body {
+.main .main-contains .card .card-body {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
 }
-main .main-contains .card .card-body i {
+.main .main-contains .card .card-body i {
   font-size: 23px;
 }
-main .main-contains .card .card-body h4 {
+.main .main-contains .card .card-body h4 {
   font-size: 1.2rem;
   margin-bottom: 5px;
   letter-spacing: 1px;
 }
 
 /* FOOTER */
-footer {
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 2rem 1rem;
   background: #353535;
 }
-footer h2 {
+.footer h2 {
   margin-bottom: 1rem;
   font-family: "Shrikhand", cursive;
   font-size: 1.3rem;
@@ -200,21 +200,21 @@ footer h2 {
   font-weight: 400;
   letter-spacing: 2px;
 }
-footer nav ul {
+.footer nav ul {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
   grid-row-gap: 5px;
 }
-footer nav ul li i {
+.footer nav ul li i {
   margin-right: 15px;
   font-size: 11px;
   color: white;
 }
-footer nav ul li .fa-hands-helping {
+.footer nav ul li .fa-hands-helping {
   margin-right: 11px;
 }
-footer nav ul li a {
+.footer nav ul li a {
   display: inline-block;
   color: white;
   font-weight: 300;
@@ -223,10 +223,10 @@ footer nav ul li a {
 
 @media only screen and (min-width: 900px) {
   /* FONCTIONNEMENT HEADER-CONTAINS */
-  header .header-contains {
+  .header .header-contains {
     padding: 5rem 1rem;
   }
-  header .header-contains .header-contains-choices {
+  .header .header-contains .header-contains-choices {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 3rem;
@@ -234,31 +234,31 @@ footer nav ul li a {
   }
 
   /* CARTE MAIN-CONTAINS */
-  main {
+  .main {
     padding: 5rem 1rem;
   }
-  main .main-contains {
+  .main .main-contains {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 50px;
     justify-items: center;
   }
-  main .main-contains .card {
+  .main .main-contains .card {
     max-width: 900px;
   }
 
   /* FOOTER LINK */
-  footer h2 {
+  .footer h2 {
     text-align: center;
     margin-bottom: 2rem;
   }
-  footer nav ul {
+  .footer nav ul {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     grid-row-gap: 20px;
   }
-  footer nav ul li {
+  .footer nav ul li {
     width: 207px;
   }
 }
@@ -267,36 +267,48 @@ footer nav ul li a {
     padding: 5rem 5rem !important;
   }
 
-  main {
+  .main {
     padding: 5rem 5rem;
   }
 }
-.header .header-return-index {
+.header-laPaletteDuGout .header-title {
   position: relative;
 }
-.header .header-return-index a {
-  display: block;
-}
-.header .header-return-index a i {
+.header-laPaletteDuGout .header-title .header-return-index p {
   position: absolute;
-  left: 30px;
-  top: 35px;
-  font-weight: 600;
+  top: 28px;
+  left: 25px;
+}
+.header-laPaletteDuGout .header-title .header-return-index p i {
   font-size: 1.5rem;
 }
-.header .header-background {
+.header-laPaletteDuGout .header-background {
   display: block;
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 512px;
   background: url(../image/resto1.jpg) no-repeat center/cover;
 }
 
-.main {
+.main-laPaletteDuGout {
   background: #fff;
 }
-.main .cards-menu {
+.main-laPaletteDuGout .cards {
+  margin: 0 auto;
+  padding: 30px 15px;
   max-width: 1300px;
+  margin-top: -4rem;
+  position: relative;
+  z-index: 2;
+  border-radius: 30px 30px 0 0;
   background: #F3F3F3;
+}
+.main-laPaletteDuGout .cards .cards-menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

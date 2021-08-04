@@ -1,27 +1,28 @@
 
 // HEADER - ARROW INDEX -Background
-.header {
+.header-laPaletteDuGout {
 
-    & .header-return-index {
+    & .header-title {
 
         position: relative;
 
-        & a {
-
-            display: block;
-
-            // ARROW INDEX
-            & i {
-
-                position: absolute;
-                left: 30px;
-                top: 35px;
-
-                font-weight: 600;
-                font-size: 1.5rem;
-
+        & .header-return-index {
+            
+            // ARROW RETURN INDEX + LINK
+            & p {
+    
+               position: absolute;
+               top: 28px;
+               left: 25px;
+    
+                & i {
+    
+                    font-size: 1.5rem;
+    
+                }
+    
             }
-
+    
         }
 
     }
@@ -29,6 +30,8 @@
     & .header-background {
 
         display: block;
+        position: relative;
+        z-index: 1;
 
         width: 100%;
         height: 512px;
@@ -39,15 +42,33 @@
 
 }
 
-.main {
+.main-laPaletteDuGout {
 
     background: #fff;
 
-    & .cards-menu {
+    & .cards {
 
-
+        margin: 0 auto;
+        padding: 30px 15px;
         max-width: 1300px;
+
+        margin-top: -4rem;
+        position: relative;
+        z-index: 2;
+
+        border-radius: 30px 30px 0 0;
+
         background: $Grey;
+
+        & .cards-menu {
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+
+            grid-row-gap: 20px;
+
+        }
 
     }
 
