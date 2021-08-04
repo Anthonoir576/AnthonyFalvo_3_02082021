@@ -17,9 +17,9 @@ footer {
         font-family: 'Shrikhand', cursive;
         font-size: 1.3rem;
         color: white;
+        font-weight: 400;
 
         letter-spacing: 2px;
-        font-weight: 400;
         
     }
 
@@ -37,15 +37,17 @@ footer {
 
                 & i {
 
-                    color: white;
                     margin-right: 15px;
 
+                    font-size: 11px;
+                    color: white;
+                    
                 }
 
                 // Correction de la deuxieme icone pour aligner proprement
                 & .fa-hands-helping {
 
-                    margin-right: 8px;
+                    margin-right: 11px;
 
                 }
                 
@@ -53,8 +55,10 @@ footer {
                 & a {
 
                     display: inline-block;
+
                     color: white;
 
+                    font-weight: 300;
                     letter-spacing: 1px;
 
                 }

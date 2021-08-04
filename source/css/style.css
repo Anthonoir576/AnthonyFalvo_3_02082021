@@ -197,8 +197,8 @@ footer h2 {
   font-family: "Shrikhand", cursive;
   font-size: 1.3rem;
   color: white;
-  letter-spacing: 2px;
   font-weight: 400;
+  letter-spacing: 2px;
 }
 footer nav ul {
   display: grid;
@@ -207,15 +207,17 @@ footer nav ul {
   grid-row-gap: 5px;
 }
 footer nav ul li i {
-  color: white;
   margin-right: 15px;
+  font-size: 11px;
+  color: white;
 }
 footer nav ul li .fa-hands-helping {
-  margin-right: 8px;
+  margin-right: 11px;
 }
 footer nav ul li a {
   display: inline-block;
   color: white;
+  font-weight: 300;
   letter-spacing: 1px;
 }
 
