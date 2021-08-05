@@ -271,18 +271,18 @@ body {
     padding: 5rem 5rem;
   }
 }
-.header-laPaletteDuGout .header-title {
+.header-pages .header-title {
   position: relative;
 }
-.header-laPaletteDuGout .header-title .header-return-index p {
+.header-pages .header-title .header-return-index p {
   position: absolute;
   top: 28px;
   left: 25px;
 }
-.header-laPaletteDuGout .header-title .header-return-index p i {
+.header-pages .header-title .header-return-index p i {
   font-size: 1.5rem;
 }
-.header-laPaletteDuGout .header-background {
+.header-pages .header-background {
   display: block;
   position: relative;
   z-index: 1;
@@ -291,10 +291,10 @@ body {
   background: url(../image/resto1.jpg) no-repeat center/cover;
 }
 
-.main-laPaletteDuGout {
+.main-pages {
   background: #fff;
 }
-.main-laPaletteDuGout .cards {
+.main-pages .cards {
   margin: 0 auto;
   padding: 30px 15px;
   max-width: 1300px;
@@ -304,7 +304,7 @@ body {
   border-radius: 30px 30px 0 0;
   background: #F3F3F3;
 }
-.main-laPaletteDuGout .cards .cards-menu {
+.main-pages .cards .cards-menu {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
