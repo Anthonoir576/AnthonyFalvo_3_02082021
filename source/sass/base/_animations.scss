@@ -1,59 +1,83 @@
 // CHECKED FOOD
-.main-pages {
+.main-pages .main-cards .cards-menu .menu {
 
-    & .main-cards {
+    max-height: 73px;
+    overflow: hidden;
 
-        & .cards-menu {
+    &:hover .menu-checked {
 
-            & .card-listMenu {
+        transition: .4s ease-in-out;
+        flex-basis: 20%;
+        transform: translateX(0px);
 
-                & .menu {
-
-                    max-height: 73px;
-                    overflow: hidden;
-
-                    & .menu-checked {
-
-                        display: flex;  // flex
-                        align-items: center;
-                        justify-content: center;  
-
-                       
-
-                        height: 73px;
-                        width: 75px;
-
-                        background-color: #99e2d0;
-                        
-                        // utilisation de marge negatif, et un overflow hidden pour créer l'element qui permettra de poussé la somme 
-                        margin: -1rem -1.3rem -1rem 0;
-   
-
-                        // deplacement sur la droite + un display none, pour eviter le décalage du prix et jouer sur la rotate en meme temps que lanimation
-                        //transform: translateX(80px);
-                        
-                        .checked {
+    }
 
 
-                            & i {
+    &:hover .menu-checked .checked > i {
 
-                                transform: rotate(90deg);
-                                
-                                background: #fff;
-                                color: #99e2d0;
-                                font-size: 16px;
+        transition: .4s ease-in;
+        transform: rotate(0deg) translateX(-3px);
 
-                                border-radius: 50%;
-                                padding: 6px;
+    }
 
-                            }
+    &:hover .menu-price {
 
-                        }
-
-                    }
+        transition: .5s;
+        flex-basis: 20%;
 
 
-                }
+    }
+
+    &:hover .menu-price {
+
+        margin-right: 1rem!important;
+
+    }
+
+    .menu-price {
+
+        transition: .5s;
+        flex-basis: 20%;
+        
+
+    }
+
+
+
+    & .menu-checked {
+
+        display: flex;  // flex
+        align-items: center;
+        justify-content: center;  
+
+
+        flex-basis: 0%;
+
+        height: 73px;
+        width: 75px;
+
+        background-color: #99e2d0;
+        
+        // utilisation de marge negatif, et un overflow hidden pour créer l'element qui permettra de poussé la somme 
+        margin: -1rem -1.3rem -1rem 0;
+
+
+        transform: translateX(30px);
+        transition: .4s ease-in-out;
+        
+        .checked {
+
+            & i {
+
+                transition: transform .25s ease-out;
+                transform: rotate(90deg);
+                
+                background: #fff;
+                color: #99e2d0;
+                font-size: 16px;
+
+                border-radius: 50%;
+                padding: 6px;
 
             }
 
@@ -62,4 +86,6 @@
     }
 
 }
+
+
 
