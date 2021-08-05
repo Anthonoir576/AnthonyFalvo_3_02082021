@@ -14,20 +14,39 @@
 
                     & .menu-checked {
 
-                        margin: -1rem -2rem -1rem 0;
+                        display: flex;  // flex
+                        align-items: center;
+                        justify-content: center;  
+
+                       
+
                         height: 73px;
                         width: 75px;
 
                         background-color: #99e2d0;
+                        
+                        // utilisation de marge negatif, et un overflow hidden pour créer l'element qui permettra de poussé la somme 
+                        margin: -1rem -1.3rem -1rem 0;
+   
 
-                        & i {
+                        // deplacement sur la droite + un display none, pour eviter le décalage du prix et jouer sur la rotate en meme temps que lanimation
+                        //transform: translateX(80px);
+                        
+                        .checked {
 
-                            background: #fff;
-                            color: #99e2d0;
-                            font-size: 16px;
 
-                            border-radius: 50%;
-                            padding: 6px;
+                            & i {
+
+                                transform: rotate(90deg);
+                                
+                                background: #fff;
+                                color: #99e2d0;
+                                font-size: 16px;
+
+                                border-radius: 50%;
+                                padding: 6px;
+
+                            }
 
                         }
 
@@ -43,3 +62,4 @@
     }
 
 }
+
