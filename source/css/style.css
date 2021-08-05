@@ -294,7 +294,7 @@ body {
 .main-pages {
   background: #fff;
 }
-.main-pages .cards {
+.main-pages .main-cards {
   margin: 0 auto;
   padding: 30px 15px;
   max-width: 1300px;
@@ -304,39 +304,65 @@ body {
   border-radius: 30px 30px 0 0;
   background: #F3F3F3;
 }
-.main-pages .cards .cards-title {
+.main-pages .main-cards .cards-title {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 3rem;
 }
-.main-pages .cards .cards-title h2 {
+.main-pages .main-cards .cards-title h2 {
   font-family: "Shrikhand", cursive;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   white-space: nowrap;
   letter-spacing: 1px;
 }
-.main-pages .cards .cards-title i {
-  font-size: 1.6rem;
+.main-pages .main-cards .cards-title i {
+  font-size: 1.3rem;
 }
-.main-pages .cards .cards-menu {
+.main-pages .main-cards .cards-menu {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-row-gap: 20px;
 }
-.main-pages .cards .cards-menu .card-listMenu h3 {
+.main-pages .main-cards .cards-menu .card-listMenu {
+  overflow: hidden;
+}
+.main-pages .main-cards .cards-menu .card-listMenu h3 {
   font-size: 1.3rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
-.main-pages .cards .cards-menu .card-listMenu h3::after {
+.main-pages .main-cards .cards-menu .card-listMenu h3::after {
   display: block;
   content: "";
   margin-top: 3px;
   width: 50px;
   height: 4px;
   background: #99E2D0;
+}
+.main-pages .main-cards .cards-menu .card-listMenu .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  cursor: pointer;
+  max-width: 100%;
+  margin: 10px 0;
+  padding: 15px 10px;
+  border-radius: 15px;
+  background: #fff;
+}
+.main-pages .main-cards .cards-menu .card-listMenu .menu .menu-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+.main-pages .main-cards .cards-menu .card-listMenu .menu .menu-title p, .main-pages .main-cards .cards-menu .card-listMenu .menu .menu-title h4 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /*# sourceMappingURL=style.css.map */
