@@ -304,11 +304,39 @@ body {
   border-radius: 30px 30px 0 0;
   background: #F3F3F3;
 }
+.main-pages .cards .cards-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 3rem;
+}
+.main-pages .cards .cards-title h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.8rem;
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+.main-pages .cards .cards-title i {
+  font-size: 1.6rem;
+}
 .main-pages .cards .cards-menu {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-row-gap: 20px;
+}
+.main-pages .cards .cards-menu .card-listMenu h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.main-pages .cards .cards-menu .card-listMenu h3::after {
+  display: block;
+  content: "";
+  margin-top: 3px;
+  width: 50px;
+  height: 4px;
+  background: #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */
