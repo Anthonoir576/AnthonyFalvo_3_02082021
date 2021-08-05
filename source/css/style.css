@@ -20,6 +20,24 @@ body {
   font-family: "Roboto", "Shrikhand", sans-serif;
 }
 
+.main-pages .main-cards .cards-menu .card-listMenu .menu {
+  max-height: 73px;
+  overflow: hidden;
+}
+.main-pages .main-cards .cards-menu .card-listMenu .menu .menu-checked {
+  margin: -1rem -2rem -1rem 0;
+  height: 73px;
+  width: 75px;
+  background-color: #99e2d0;
+}
+.main-pages .main-cards .cards-menu .card-listMenu .menu .menu-checked i {
+  background: #fff;
+  color: #99e2d0;
+  font-size: 16px;
+  border-radius: 50%;
+  padding: 6px;
+}
+
 /* HEADER */
 .header .header-title {
   position: relative;
