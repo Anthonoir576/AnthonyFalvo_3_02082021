@@ -4,45 +4,42 @@
     max-height: 73px;
     overflow: hidden;
 
-    &:hover .menu-checked {
+    &:hover {
 
-        transition: .4s ease-in-out;
-        flex-basis: 20%;
-        transform: translateX(0px);
+        & .menu-checked {
 
-    }
-
-
-    &:hover .menu-checked .checked > i {
-
-        transition: .4s ease-in;
-        transform: rotate(0deg) translateX(-3px);
-
-    }
-
-    &:hover .menu-price {
-
-        transition: .5s;
-        flex-basis: 20%;
-
-
-    }
-
-    &:hover .menu-price {
-
-        margin-right: 1rem!important;
+            transition: .5s cubic-bezier(.3,.54,.51,1.14);
+            flex-basis: 20%;
+            transform: translateX(0px);
+    
+        }
+    
+        & .menu-checked .checked > i {
+    
+            transition: .43s ease-in;
+            transform: rotate(0deg) translateX(-3px);
+    
+        }
+    
+        & .menu-price {
+    
+            transition: .5s;
+    
+        }
+    
+        & .menu-price {
+    
+            margin-right: 1rem!important;
+    
+        }
 
     }
 
     .menu-price {
 
         transition: .5s;
-        flex-basis: 20%;
         
-
     }
-
-
 
     & .menu-checked {
 
@@ -61,15 +58,14 @@
         // utilisation de marge negatif, et un overflow hidden pour créer l'element qui permettra de poussé la somme 
         margin: -1rem -1.3rem -1rem 0;
 
-
         transform: translateX(30px);
-        transition: .4s ease-in-out;
+        transition: .5s cubic-bezier(.3,.54,.51,1.14);
         
         .checked {
 
             & i {
 
-                transition: transform .25s ease-out;
+                transition: transform .15s ease-out;
                 transform: rotate(90deg);
                 
                 background: #fff;
@@ -86,6 +82,3 @@
     }
 
 }
-
-
-
