@@ -401,9 +401,11 @@ body {
 .main-pages .main-cards .cards-menu .card-listMenu .menu .menu-title h4 {
   margin-bottom: 2px;
   font-size: 1.05rem;
+  letter-spacing: 0.5px;
 }
 .main-pages .main-cards .cards-menu .card-listMenu .menu .menu-title p {
   font-size: 1rem;
+  color: rgba(0, 0, 0, 0.7);
 }
 .main-pages .main-cards .cards-menu .card-listMenu .menu .menu-price {
   padding-left: 10px;
