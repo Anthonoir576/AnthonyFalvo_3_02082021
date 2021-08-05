@@ -1,4 +1,5 @@
 // CHECKED FOOD
+// Sans keyframe tenté de faire avec - resultat correct
 .main-pages .main-cards .cards-menu .menu {
 
     max-height: 73px;
@@ -9,7 +10,7 @@
         & .menu-checked {
 
             transition: .5s cubic-bezier(.3,.54,.51,1.14);
-            flex-basis: 20%;
+            flex-basis: 5rem;
             transform: translateX(0px);
     
         }

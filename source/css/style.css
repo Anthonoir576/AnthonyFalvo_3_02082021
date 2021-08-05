@@ -26,7 +26,7 @@ body {
 }
 .main-pages .main-cards .cards-menu .menu:hover .menu-checked {
   transition: 0.5s cubic-bezier(0.3, 0.54, 0.51, 1.14);
-  flex-basis: 20%;
+  flex-basis: 5rem;
   transform: translateX(0px);
 }
 .main-pages .main-cards .cards-menu .menu:hover .menu-checked .checked > i {
