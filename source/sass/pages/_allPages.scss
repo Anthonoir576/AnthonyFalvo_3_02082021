@@ -27,16 +27,36 @@
 
     }
 
-    & .header-background {
+    & .header-background-laPaletteDuGout {
 
-        display: block;
-        position: relative;
-        z-index: 1;
-
-        width: 100%;
-        height: 512px;
+        @include bg-pages;
 
         background: url(../image/resto1.jpg) no-repeat center/cover;
+
+    }
+
+    & .header-background-laNoteEnchantee {
+        
+        @include bg-pages;
+
+        background: url(../image/resto2.jpg) no-repeat center/cover;
+
+    }
+
+    
+    & .header-background-aLaFrançaise {
+        
+        @include bg-pages;
+
+        background: url(../image/resto3.jpg) no-repeat center/cover;
+
+    }
+
+    & .header-background-leDeliceDesSens {
+        
+        @include bg-pages;
+
+        background: url(../image/resto4.jpg) no-repeat center/cover;
 
     }
 
@@ -45,14 +65,14 @@
 .main-pages {
 
     background: #fff;
-
+  
     // Disposition de la carte, sur le header avec un margin-top en neg
     & .main-cards {
         
         margin: 0 auto;
-        padding: 30px 15px;
+        padding: 30px 15px 30px 15px;
 
-        max-width: 1300px;
+        max-width: 1400px;
 
         margin-top: -4rem;
         position: relative;
@@ -61,6 +81,7 @@
         border-radius: 30px 30px 0 0;
 
         background: $Grey;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.267);
 
         // Nom restaurant + coeur
         & .cards-title {
@@ -69,7 +90,7 @@
             justify-content: space-between;
             align-items: baseline;
 
-            margin-bottom: 3rem;
+            margin:0 10px 3rem 10px;
 
             & h2 {
 
@@ -140,7 +161,7 @@
 
                     max-width: 100%;
 
-                    margin: 10px;
+                    margin: 20px 10px;
                     padding: 16px 20px;
 
                     border-radius: 15px;
@@ -168,8 +189,21 @@
                         & h4 {
 
                             margin-bottom: 2px;
+                            font-size: 1.05rem;
 
                         }
+
+                        & p {
+
+                            font-size: 1rem;
+
+                        }
+
+                    }
+
+                    & .menu-price {
+
+                        padding-left: 10px;
 
                     }
 
@@ -191,6 +225,8 @@
             & p a {
 
                 display: inline-block;
+
+                font-size: 18px;
                 padding: 11px 27px;
 
                 border-radius: 20px;

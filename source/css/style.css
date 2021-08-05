@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Variables COULEURS*/
 /* RESET padding et margin, color, fontSize - BORDER BOX */
 * {
@@ -271,6 +272,13 @@ body {
     padding: 5rem 5rem;
   }
 }
+@media only screen and (min-width: 1100px) {
+  body .main-pages .main-cards .cards-menu {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+  }
+}
 .header-pages .header-title {
   position: relative;
 }
@@ -282,7 +290,7 @@ body {
 .header-pages .header-title .header-return-index p i {
   font-size: 1.5rem;
 }
-.header-pages .header-background {
+.header-pages .header-background-laPaletteDuGout {
   display: block;
   position: relative;
   z-index: 1;
@@ -290,25 +298,50 @@ body {
   height: 512px;
   background: url(../image/resto1.jpg) no-repeat center/cover;
 }
+.header-pages .header-background-laNoteEnchantee {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 512px;
+  background: url(../image/resto2.jpg) no-repeat center/cover;
+}
+.header-pages .header-background-aLaFrançaise {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 512px;
+  background: url(../image/resto3.jpg) no-repeat center/cover;
+}
+.header-pages .header-background-leDeliceDesSens {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 512px;
+  background: url(../image/resto4.jpg) no-repeat center/cover;
+}
 
 .main-pages {
   background: #fff;
 }
 .main-pages .main-cards {
   margin: 0 auto;
-  padding: 30px 15px;
-  max-width: 1300px;
+  padding: 30px 15px 30px 15px;
+  max-width: 1400px;
   margin-top: -4rem;
   position: relative;
   z-index: 2;
   border-radius: 30px 30px 0 0;
   background: #F3F3F3;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.267);
 }
 .main-pages .main-cards .cards-title {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 3rem;
+  margin: 0 10px 3rem 10px;
 }
 .main-pages .main-cards .cards-title h2 {
   font-family: "Shrikhand", cursive;
@@ -348,7 +381,7 @@ body {
   flex-wrap: wrap;
   cursor: pointer;
   max-width: 100%;
-  margin: 10px;
+  margin: 20px 10px;
   padding: 16px 20px;
   border-radius: 15px;
   background: #fff;
@@ -367,6 +400,13 @@ body {
 }
 .main-pages .main-cards .cards-menu .card-listMenu .menu .menu-title h4 {
   margin-bottom: 2px;
+  font-size: 1.05rem;
+}
+.main-pages .main-cards .cards-menu .card-listMenu .menu .menu-title p {
+  font-size: 1rem;
+}
+.main-pages .main-cards .cards-menu .card-listMenu .menu .menu-price {
+  padding-left: 10px;
 }
 .main-pages .main-cards .cards-button {
   width: 100%;
@@ -375,6 +415,7 @@ body {
 }
 .main-pages .main-cards .cards-button p a {
   display: inline-block;
+  font-size: 18px;
   padding: 11px 27px;
   border-radius: 20px;
   color: white;

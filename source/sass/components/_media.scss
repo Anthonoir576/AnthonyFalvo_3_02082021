@@ -100,3 +100,29 @@
     }
 
 }
+
+// PAGES RESTAURANTS 
+@media only screen and (min-width: 1100px) {
+
+    body {
+
+        & .main-pages {
+
+            & .main-cards {
+    
+                & .cards-menu {
+    
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: 1fr;
+        
+                    grid-column-gap: 15px;
+    
+                }
+    
+            }
+    
+        }
+
+    }
+    
+}
