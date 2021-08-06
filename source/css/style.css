@@ -207,6 +207,56 @@ body {
   animation: progressBarAnimation 2750ms;
 }
 
+.itemAnimation {
+  animation: itemMenu 1s cubic-bezier(0.5, 1.58, 0.34, 0.82) forwards;
+  opacity: 0;
+}
+
+.main-cards .cards-menu .delay-01 {
+  animation-delay: 50ms;
+}
+.main-cards .cards-menu .delay-02 {
+  animation-delay: 150ms;
+}
+.main-cards .cards-menu .delay-03 {
+  animation-delay: 250ms;
+}
+.main-cards .cards-menu .delay-04 {
+  animation-delay: 350ms;
+}
+.main-cards .cards-menu .delay-05 {
+  animation-delay: 450ms;
+}
+.main-cards .cards-menu .delay-06 {
+  animation-delay: 550ms;
+}
+.main-cards .cards-menu .delay-07 {
+  animation-delay: 650ms;
+}
+.main-cards .cards-menu .delay-08 {
+  animation-delay: 750ms;
+}
+.main-cards .cards-menu .delay-09 {
+  animation-delay: 850ms;
+}
+.main-cards .cards-menu .delay-10 {
+  animation-delay: 950ms;
+}
+
+@keyframes itemMenu {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.01);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 /* HEADER */
 .header .header-title {
   position: relative;

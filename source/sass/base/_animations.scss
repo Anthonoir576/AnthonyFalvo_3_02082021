@@ -335,7 +335,111 @@
 
 }
 
+// MENU APPARITION
+.itemAnimation {
 
+    animation: itemMenu 1s cubic-bezier(.5,1.58,.34,.82) forwards;
+    opacity: 0;
+
+}
+
+.main-cards .cards-menu {
+
+    & .delay-01 {
+
+        animation-delay: 50ms;
+    
+    }
+
+    
+    & .delay-02 {
+
+        animation-delay: 150ms;
+    
+    }
+
+    
+    & .delay-03 {
+
+        animation-delay: 250ms;
+    
+    }
+
+    
+    & .delay-04 {
+
+        animation-delay: 350ms;
+    
+    }
+
+    
+    & .delay-05 {
+
+        animation-delay: 450ms;
+    
+    }
+
+    
+    & .delay-06 {
+
+        animation-delay: 550ms;
+    
+    }
+
+    
+    & .delay-07 {
+
+        animation-delay: 650ms;
+    
+    }
+
+    
+    & .delay-08 {
+
+        animation-delay: 750ms;
+    
+    }
+
+    
+    & .delay-09 {
+
+        animation-delay: 850ms;
+    
+    }
+
+    
+    & .delay-10 {
+
+        animation-delay: 950ms;
+    
+    }
+
+
+}
+
+@keyframes itemMenu {
+
+    0% {
+
+        transform: scale(0);
+        opacity: 0;
+
+    }
+
+    50% {
+
+        transform: scale(1.01);
+        opacity: 1;
+
+    }
+
+    100% {
+
+        transform: scale(1);
+        opacity: 1;
+    
+    }
+} 
    
 
 
