@@ -86,25 +86,50 @@
 
 // far vide fa plein
 
-.card-icon {
+.card-icon, .cards-title {
 
     position: relative;
+    bottom: 0px;
 
-    // PLEIN
-    & .fa.fa-heart {
-
-        color: wheat;
-        color: linear-gradient(0deg, rgba(147,86,220,1) 10%, rgba(255,121,218,1) 100%);
-    
-    }
-    
     // VIDE
     & .far.fa-heart {
     
+        color: rgba(0, 0, 0, 0.87);
+
         position: absolute;
-        right: 0px;    
-    
+        top: 0px;
+        right: 0px;
+        z-index: 2;
+        
+        opacity: 1;
+  
+        &:hover ~ .fa.fa-heart {
+
+            transition: .3s linear;
+            opacity: 1;
+            
+        }
     }
 
+    // PLEIN
+    & .fa.fa-heart {
+ 
+        // background: -webkit-linear-gradient(0deg, rgba(147,86,220,1) 10%, rgba(255,121,218,1) 100%);
+        // background: -moz-linear-gradient(0deg, rgba(147,86,220,1) 10%, rgba(255,121,218,1) 100%);
+        background: linear-gradient(0deg, rgba(147,86,220,1) 10%, rgba(255,121,218,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 
+        opacity: 0;
+        transition: .2s ease-out;
+        
+
+        position: absolute;
+        top: 0px;
+        right:0px;
+        z-index: 1;
+
+
+    }
+  
 }

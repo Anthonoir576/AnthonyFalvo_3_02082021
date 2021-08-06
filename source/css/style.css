@@ -64,16 +64,32 @@ body {
   padding: 6px;
 }
 
-.card-icon {
+.card-icon, .cards-title {
   position: relative;
+  bottom: 0px;
 }
-.card-icon .fa.fa-heart {
-  color: wheat;
-  color: linear-gradient(0deg, #9356dc 10%, #ff79da 100%);
-}
-.card-icon .far.fa-heart {
+.card-icon .far.fa-heart, .cards-title .far.fa-heart {
+  color: rgba(0, 0, 0, 0.87);
   position: absolute;
+  top: 0px;
   right: 0px;
+  z-index: 2;
+  opacity: 1;
+}
+.card-icon .far.fa-heart:hover ~ .fa.fa-heart, .cards-title .far.fa-heart:hover ~ .fa.fa-heart {
+  transition: 0.3s linear;
+  opacity: 1;
+}
+.card-icon .fa.fa-heart, .cards-title .fa.fa-heart {
+  background: linear-gradient(0deg, #9356dc 10%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: 0.2s ease-out;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
 }
 
 /* HEADER */
