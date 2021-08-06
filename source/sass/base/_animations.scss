@@ -581,7 +581,7 @@
 
 
 // ######################### HOVER BUTTON and other ############################
-// BUTTON INDEX
+// ######## BUTTON INDEX ##########
 .header {
 
     & .header-main {
@@ -590,7 +590,7 @@
 
             & a {
 
-                transition: .5s linear;
+                transition: all .5s linear;
 
                 &:hover {
 
@@ -615,7 +615,7 @@
 
             & p a {
 
-                transition: .5s linear;
+                transition: all 0.9s linear;
 
                 &:hover {
 
@@ -631,4 +631,135 @@
 
 }
 
-// Footer animation
+
+
+// ####### CARD ############
+.card {
+
+    transition: all 500ms;
+
+    &:hover {
+
+        transition: all 300ms;
+        transform: scale(1.015);
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, .6)!important;
+
+        filter: saturate(250%);
+
+    }
+
+}
+
+
+// ########## Footer animation NAVIGATION ############
+.footer {
+
+    & .navbar-footer {
+
+        & .nav-list {
+
+            .nav-link {
+
+                transition: all .3s linear;
+                
+                & a {
+
+                    height: 30px;
+
+                }
+
+                &:hover {
+
+                    transition: all .3s linear;
+                    transform: translateX(10px);
+
+                    & i, a {
+
+                        color: rgba(255, 255, 255, 0.774);
+
+                    }
+
+                    & a::after {
+
+                        transition: all 1s linear;
+                        display: block;
+                        content: '';
+
+                        margin-top: 5px;
+
+                        width: 33%;
+                        height: 1.5px;
+
+                        background: rgba(255, 255, 255, 0.774);
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+
+// ######### hover sur HERO COVER de chaque page #############
+.header-pages {
+
+    & .header-background-laPaletteDuGout {
+
+        transition: all 2000ms ease-in-out;
+
+        &:hover {
+
+            transition: all 1500ms ease-in-out;
+            filter: saturate(200%);
+
+        }
+
+    }
+
+    & .header-background-laNoteEnchantee {
+        
+        transition: all 2000ms ease-in-out;
+
+        &:hover {
+
+            transition: all 1500ms ease-in-out;
+            filter: saturate(200%);
+
+        }
+
+    }
+
+    
+    & .header-background-aLaFrançaise {
+        
+        transition: all 2000ms ease-in-out;
+
+        &:hover {
+
+            transition: all 1500ms ease-in-out;
+            filter: saturate(200%);
+
+        }
+
+    }
+
+    & .header-background-leDeliceDesSens {
+
+        transition: all 2000ms ease-in-out;
+
+        &:hover {
+
+            transition: all 1500ms ease-in-out;
+            filter: saturate(200%);
+
+        }
+
+    }
+
+}
+

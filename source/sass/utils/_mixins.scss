@@ -45,7 +45,7 @@
 
 @mixin hoverBUTTON {
 
-    transition: filter background .6s linear;
+    transition: all 750ms linear;
 
     background: linear-gradient(15deg, rgba($Primaire, .8) 10%, rgba($Secondaire, .8) 100%);
     filter: saturate(170%);
