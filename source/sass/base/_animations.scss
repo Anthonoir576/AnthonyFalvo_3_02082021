@@ -576,4 +576,59 @@
    
 
 
-  
+
+
+
+
+// ######################### HOVER BUTTON and other ############################
+// BUTTON INDEX
+.header {
+
+    & .header-main {
+
+        & div {
+
+            & a {
+
+                transition: .5s linear;
+
+                &:hover {
+
+                    @include hoverBUTTON;
+
+                }
+            
+            }
+
+        }
+
+    }
+
+}
+
+// BUTTON ALL PAGES 
+.main-pages {
+
+    & .main-cards {
+
+        & .cards-button {
+
+            & p a {
+
+                transition: .5s linear;
+
+                &:hover {
+
+                    @include hoverBUTTON;
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+// Footer animation

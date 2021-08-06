@@ -41,3 +41,17 @@
 
 }
 
+// HOVER BUTTON 
+
+@mixin hoverBUTTON {
+
+    transition: filter background .6s linear;
+
+    background: linear-gradient(15deg, rgba($Primaire, .8) 10%, rgba($Secondaire, .8) 100%);
+    filter: saturate(170%);
+
+    transform: scale(1.01);
+
+    box-shadow: -2px -5px 6px -3px rgba(0, 0, 0, .1);
+
+}
