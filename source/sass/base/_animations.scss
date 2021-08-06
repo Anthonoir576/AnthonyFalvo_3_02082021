@@ -88,6 +88,8 @@
 
 
 
+
+
 // ######################### COEUR LIKE ############################
 // Le fameux coeur 
 .card-icon, .cards-title {
@@ -154,8 +156,10 @@
     position: absolute;
     top: 7px!important;
 
-
 }
+
+
+
 
 
 
@@ -167,6 +171,7 @@
 .load {
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -344,6 +349,118 @@
 
 }
 
+// stockage variable CSS 
+:root {
+
+    --effet: loaderEffect 1s linear infinite;
+
+}
+
+.load-txt {
+
+    p {
+
+        // alignement des P pour formé le mot
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: 'Shrikhand', 'roboto', cursive;
+        font-size: 4em;
+        font-weight: 600;
+        transform: scale(.5);
+        color: rgba(147,86,220,1);
+
+        // attribut un une animation avec un delai sur chaque lettre pour avoir cette effet de décallage
+        &:nth-child(1) {
+
+            animation: var(--effet);
+    
+        }
+        
+        &:nth-child(2) {
+    
+            animation: var(--effet) .125s;
+    
+        }
+        
+        &:nth-child(3) {
+    
+            animation: var(--effet) .25s;
+    
+        }
+        
+        &:nth-child(4) {
+    
+            animation: var(--effet) .375s;
+    
+        }
+        
+        &:nth-child(5) {
+    
+            animation: var(--effet) .5s;
+    
+        }
+        
+        &:nth-child(6) {
+    
+            animation: var(--effet) .675s;
+    
+        }
+        
+        &:nth-child(7) {
+    
+            animation: var(--effet) .75s;
+    
+        }
+    
+        &:nth-child(8) {
+    
+            animation: var(--effet) .875s;
+    
+        }
+    
+        &:nth-child(9) {
+    
+            animation: var(--effet) 1000ms;
+    
+        }
+    
+        &:nth-child(10) {
+    
+            animation: var(--effet) 1175ms;
+    
+        }
+        
+    }
+      
+    // durant l'animation on rends la lettre plus petite, taille initiale, et plus petite avec des couleurs differents afin de créez cette effet de déplacement
+    @keyframes loaderEffect {
+
+        0% {
+
+            transform: scale(.5);
+            color: rgba(147,86,220,1);
+            
+        }
+        
+        20% {
+
+            transform: scale(1);
+            color: rgba(255,121,218,1);
+           
+        }
+        
+        50% {
+
+            transform: scale(.5);
+            color: rgba(147,86,220,1);
+           
+        }
+        
+    }
+
+}
+
+
 
 
 
@@ -459,13 +576,4 @@
    
 
 
-  
-
-
-  
-
-  
-  
-
- 
   
