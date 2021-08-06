@@ -84,3 +84,27 @@
 
 }
 
+// far vide fa plein
+
+.card-icon {
+
+    position: relative;
+
+    // PLEIN
+    & .fa.fa-heart {
+
+        color: wheat;
+        color: linear-gradient(0deg, rgba(147,86,220,1) 10%, rgba(255,121,218,1) 100%);
+    
+    }
+    
+    // VIDE
+    & .far.fa-heart {
+    
+        position: absolute;
+        right: 0px;    
+    
+    }
+
+
+}

@@ -64,6 +64,18 @@ body {
   padding: 6px;
 }
 
+.card-icon {
+  position: relative;
+}
+.card-icon .fa.fa-heart {
+  color: wheat;
+  color: linear-gradient(0deg, #9356dc 10%, #ff79da 100%);
+}
+.card-icon .far.fa-heart {
+  position: absolute;
+  right: 0px;
+}
+
 /* HEADER */
 .header .header-title {
   position: relative;
