@@ -132,7 +132,7 @@
  
         // background: -webkit-linear-gradient(0deg, rgba(147,86,220,1) 10%, rgba(255,121,218,1) 100%);
         // background: -moz-linear-gradient(0deg, rgba(147,86,220,1) 10%, rgba(255,121,218,1) 100%);
-        background: linear-gradient(0deg, rgba(147,86,220,1) 10%, rgba(255,121,218,1) 100%);
+        background: linear-gradient(0deg, $Primaire 10%, $Secondaire 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
@@ -339,7 +339,7 @@
 
             width: 100%; 
 
-            background: linear-gradient(90deg, rgba(147,86,220,1) 10%, rgba(255,121,218,1) 100%);
+            background: linear-gradient(90deg, $Primaire 10%, $Secondaire 100%);
 
             animation: progressBarAnimation 2750ms;
 
@@ -364,7 +364,7 @@
         display: inline-block;
         text-transform: uppercase;
         font-family: 'Shrikhand', 'roboto', cursive;
-        font-size: 4em;
+        font-size: 4rem;
         font-weight: 600;
         transform: scale(.5);
         color: rgba(147,86,220,1);
@@ -438,21 +438,21 @@
         0% {
 
             transform: scale(.5);
-            color: rgba(147,86,220,1);
+            color: $Primaire;
             
         }
         
         20% {
 
             transform: scale(1);
-            color: rgba(255,121,218,1);
+            color: $Secondaire;
            
         }
         
         50% {
 
             transform: scale(.5);
-            color: rgba(147,86,220,1);
+            color: $Primaire;
            
         }
         

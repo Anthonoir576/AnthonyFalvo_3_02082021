@@ -86,7 +86,7 @@ body {
   opacity: 0;
 }
 .card-icon .fa.fa-heart, .cards-title .fa.fa-heart {
-  background: linear-gradient(0deg, #9356dc 10%, #ff79da 100%);
+  background: linear-gradient(0deg, #9356DC 10%, #FF79DA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
@@ -204,7 +204,7 @@ body {
 }
 .load .loader-contains .progress-fade .progress-bar {
   width: 100%;
-  background: linear-gradient(90deg, #9356dc 10%, #ff79da 100%);
+  background: linear-gradient(90deg, #9356DC 10%, #FF79DA 100%);
   animation: progressBarAnimation 2750ms;
 }
 
@@ -216,7 +216,7 @@ body {
   display: inline-block;
   text-transform: uppercase;
   font-family: "Shrikhand", "roboto", cursive;
-  font-size: 4em;
+  font-size: 4rem;
   font-weight: 600;
   transform: scale(0.5);
   color: #9356dc;
@@ -254,15 +254,15 @@ body {
 @keyframes loaderEffect {
   0% {
     transform: scale(0.5);
-    color: #9356dc;
+    color: #9356DC;
   }
   20% {
     transform: scale(1);
-    color: #ff79da;
+    color: #FF79DA;
   }
   50% {
     transform: scale(0.5);
-    color: #9356dc;
+    color: #9356DC;
   }
 }
 
@@ -573,6 +573,11 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .load-txt p {
+    font-size: 2rem;
   }
 }
 .header-pages .header-title {
