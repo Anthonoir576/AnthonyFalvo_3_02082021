@@ -1,3 +1,4 @@
+// ######################### ITEM CHECKED ############################
 // CHECKED FOOD
 // Sans keyframe tenté de faire avec - resultat correct
 .main-pages .main-cards .cards-menu .menu {
@@ -84,6 +85,10 @@
 
 }
 
+
+
+
+// ######################### COEUR LIKE ############################
 // Le fameux coeur 
 .card-icon, .cards-title {
 
@@ -152,6 +157,10 @@
 
 }
 
+
+
+
+// ######################### LOADER INDEX ############################
 // LOADER 
 // div centrage + bg 
 // Permet de faire disparaitre toute la div au timing souhaitez, et ne pas le faire individuellement
@@ -335,6 +344,11 @@
 
 }
 
+
+
+
+
+// ######################### MENU APPARITION ############################
 // MENU APPARITION
 .itemAnimation {
 
@@ -343,6 +357,7 @@
 
 }
 
+// delay personnalisé pour chaque item du menu 
 .main-cards .cards-menu {
 
     & .delay-01 {
@@ -417,6 +432,7 @@
 
 }
 
+// animation d'apparition
 @keyframes itemMenu {
 
     0% {
