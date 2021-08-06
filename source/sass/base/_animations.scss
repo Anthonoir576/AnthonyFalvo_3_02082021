@@ -88,7 +88,7 @@
 .card-icon, .cards-title {
 
     position: relative;
-    bottom: 0px;
+    bottom: 11px;
 
     // VIDE
     & .far.fa-heart {
@@ -141,6 +141,15 @@
 
     }
   
+}
+
+// correction sur la carte des plats, pour que le coeur soit a la juste place
+.cards-title > i {
+
+    position: absolute;
+    top: 7px!important;
+
+
 }
 
 // LOADER 
