@@ -168,9 +168,35 @@
 
     // rajout d'un visibilty hidden par defaut, sinon la div et juste opaque, et permet plus le hover, ni le clique
 
+    // animation du background et de la barre, apparition disparition
     @keyframes bg {
 
         0% {
+            
+            visibility: visible;
+            opacity: 1;
+            background: rgba(255, 255, 255, .99);
+    
+        }
+        
+        25% {
+            
+            visibility: visible;
+            opacity: 1;
+            background: rgba(255, 255, 255, .95);
+    
+        }
+
+        50% {
+            
+            visibility: visible;
+            opacity: 1;
+            background: rgba(255, 255, 255, .90);
+    
+        }
+
+        
+        60% {
             
             visibility: visible;
             opacity: 1;
@@ -181,7 +207,7 @@
         80% {
     
             visibility: visible;
-            background: rgba(255, 255, 255, .85);
+            background: rgba(255, 255, 255, .80);
             opacity: 1;
     
         }
@@ -245,6 +271,7 @@
     
     }
 
+    // barre de progression du 0 a 100, en jouant sur la largeur et le timing
     @keyframes progressBarAnimation {
 
         from {

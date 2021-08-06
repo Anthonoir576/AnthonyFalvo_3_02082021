@@ -115,11 +115,26 @@ body {
   0% {
     visibility: visible;
     opacity: 1;
+    background: rgba(255, 255, 255, 0.99);
+  }
+  25% {
+    visibility: visible;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.95);
+  }
+  50% {
+    visibility: visible;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  60% {
+    visibility: visible;
+    opacity: 1;
     background: rgba(255, 255, 255, 0.85);
   }
   80% {
     visibility: visible;
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.8);
     opacity: 1;
   }
   85% {
