@@ -109,29 +109,51 @@ body {
   bottom: 0;
   z-index: 999;
   animation: bg 3s forwards;
+  visibility: hidden;
 }
 @keyframes bg {
   0% {
+    visibility: visible;
     opacity: 1;
     background: rgba(255, 255, 255, 0.85);
   }
   80% {
+    visibility: visible;
     background: rgba(255, 255, 255, 0.85);
     opacity: 1;
   }
   85% {
+    visibility: visible;
     background: rgba(255, 255, 255, 0.6);
     opacity: 0.8;
   }
   90% {
+    visibility: visible;
     background: rgba(255, 255, 255, 0.4);
     opacity: 0.6;
   }
-  95% {
-    background: rgba(255, 255, 255, 0.2);
-    opacity: 0.3;
+  92% {
+    visibility: visible;
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 0.5;
+  }
+  94% {
+    visibility: visible;
+    background: rgba(255, 255, 255, 0.25);
+    opacity: 0.4;
+  }
+  96% {
+    visibility: visible;
+    background: rgba(255, 255, 255, 0.15);
+    opacity: 0.2;
+  }
+  98% {
+    visibility: visible;
+    background: rgba(255, 255, 255, 0.05);
+    opacity: 0.1;
   }
   100% {
+    visibility: hidden;
     background: rgba(255, 255, 255, 0);
     opacity: 0;
   }

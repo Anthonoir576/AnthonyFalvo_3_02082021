@@ -145,6 +145,7 @@
 
 // LOADER 
 // div centrage + bg 
+// Permet de faire disparaitre toute la div au timing souhaitez, et ne pas le faire individuellement
 .load {
 
     display: flex;
@@ -163,47 +164,80 @@
 
     // fond avec un peu d'opacité
     animation: bg 3s forwards;
+    visibility: hidden;
+
+    // rajout d'un visibilty hidden par defaut, sinon la div et juste opaque, et permet plus le hover, ni le clique
 
     @keyframes bg {
 
         0% {
             
+            visibility: visible;
             opacity: 1;
-            background: rgba(255, 255, 255, 0.85);
+            background: rgba(255, 255, 255, .85);
     
         }
     
         80% {
     
-            background: rgba(255, 255, 255, 0.85);
+            visibility: visible;
+            background: rgba(255, 255, 255, .85);
             opacity: 1;
     
         }
 
         85% {
 
-            background: rgba(255, 255, 255, 0.6);
+            visibility: visible;
+            background: rgba(255, 255, 255, .6);
             opacity: .8;
 
         }
 
         90% {
 
-            background: rgba(255, 255, 255, 0.4);
+            visibility: visible;
+            background: rgba(255, 255, 255, .4);
             opacity: .6;
 
         }
 
-        95% {
+        92% {
 
-            background: rgba(255, 255, 255, 0.2);
-            opacity: .3;
+            visibility: visible;
+            background: rgba(255, 255, 255, .3);
+            opacity: .5;
+
+        }
+
+        94% {
+
+            visibility: visible;
+            background: rgba(255, 255, 255, .25);
+            opacity: .4;
+
+        }
+
+        96% {
+
+            visibility: visible;
+            background: rgba(255, 255, 255, .15);
+            opacity: .2;
+
+        }
+
+        98% {
+
+            visibility: visible;
+            background: rgba(255, 255, 255, .05);
+            opacity: .1;
 
         }
 
             
         100% {
-    
+            
+            visibility: hidden;
             background: rgba(255, 255, 255, 0);
             opacity: 0;
     
