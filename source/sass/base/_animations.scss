@@ -84,8 +84,7 @@
 
 }
 
-// far vide fa plein
-
+// Le fameux coeur 
 .card-icon, .cards-title {
 
     position: relative;
@@ -102,12 +101,22 @@
         z-index: 2;
         
         opacity: 1;
+
+        transition: .2s ease-out;
   
         &:hover ~ .fa.fa-heart {
 
             transition: .3s linear;
             opacity: 1;
             
+        }
+
+        // Pour garder les bordures, enlever ce selecteur et la transition au dessus.
+        &:hover {
+
+            transition: .3s linear;
+            opacity: 0;
+
         }
     }
 

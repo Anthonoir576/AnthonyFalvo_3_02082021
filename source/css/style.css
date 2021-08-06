@@ -75,10 +75,15 @@ body {
   right: 0px;
   z-index: 2;
   opacity: 1;
+  transition: 0.2s ease-out;
 }
 .card-icon .far.fa-heart:hover ~ .fa.fa-heart, .cards-title .far.fa-heart:hover ~ .fa.fa-heart {
   transition: 0.3s linear;
   opacity: 1;
+}
+.card-icon .far.fa-heart:hover, .cards-title .far.fa-heart:hover {
+  transition: 0.3s linear;
+  opacity: 0;
 }
 .card-icon .fa.fa-heart, .cards-title .fa.fa-heart {
   background: linear-gradient(0deg, #9356dc 10%, #ff79da 100%);
