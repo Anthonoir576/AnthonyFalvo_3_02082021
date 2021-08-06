@@ -116,7 +116,7 @@
 
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-rows: minmax(350px, 1fr) minmax(350px, auto) minmax(350px, auto);
 
             grid-row-gap: 20px;
 
@@ -125,6 +125,8 @@
 
             // Petit soucie du textoverflow, il a fallu mettre un overflow hidden directement sur la section, avec un flex wrap sur le menu
             & .card-listMenu {
+
+                max-height: 100%!important;
 
                 overflow: hidden;
 
