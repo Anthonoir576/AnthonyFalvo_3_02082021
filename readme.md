@@ -14,7 +14,7 @@ ___________________________________________
 - ✅ <del>mise en forme</del>
 - ✅ <del> Responsive </del>
 -
-- ❌ W3C ALL
+- ✅ <del> W3C ALL</del> Aucune erreur en html, aucune erreur en css, uniquement trois avertissements concernant l'utilisation des webkit, et d'une variable css, revoir et en faire un mixin a la place
 ___________________________________________
 
 < HTML : /> 
