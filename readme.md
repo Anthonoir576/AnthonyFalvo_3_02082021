@@ -5,9 +5,9 @@ ___________________________________________
 
 < A FAIRE : />
 
-- ❌ Loader
-- ❌ apparation menu 
-- ❌ hover autre 
+- ✅ <del>Loader </del>
+- ✅ <del>apparation menu </del>
+- ✅ <del>hover autre </del>
 - ✅ <del>Coeur (Trouver assez rapidement)</del>
 - ✅ <del>checked (une galère)</del>
 - ✅ <del>Structure</del> 
