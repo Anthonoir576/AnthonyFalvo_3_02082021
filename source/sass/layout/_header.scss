@@ -139,6 +139,24 @@
                 border-radius: 20px;
 
                 box-shadow: 8px 8px 8px -7px #00000075;
+                transition: all .3s ease-in-out;
+
+                cursor: pointer;
+
+                &:hover {
+
+                    transition: all 100ms ease-in-out;
+                    background: linear-gradient(0deg, $Primaire 10%, $Secondaire 100%);
+                    box-shadow: 1px 3px 6px 1px rgba(5, 5, 5, .55);
+
+                    & p {
+
+                        transition: all 50ms ease-in-out;
+                        color: white;
+
+                    }
+
+                }
                 
                 & :nth-child(1) {
 

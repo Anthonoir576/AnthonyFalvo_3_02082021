@@ -481,6 +481,17 @@ body {
   background: #F3F3F3;
   border-radius: 20px;
   box-shadow: 8px 8px 8px -7px #00000075;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.header .header-contains .header-contains-choices .header-choice:hover {
+  transition: all 100ms ease-in-out;
+  background: linear-gradient(0deg, #9356DC 10%, #FF79DA 100%);
+  box-shadow: 1px 3px 6px 1px rgba(5, 5, 5, 0.55);
+}
+.header .header-contains .header-contains-choices .header-choice:hover p {
+  transition: all 50ms ease-in-out;
+  color: white;
 }
 .header .header-contains .header-contains-choices .header-choice :nth-child(1) {
   padding: 4px 9px;
@@ -680,7 +691,7 @@ body {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 512px;
+  height: 400px;
   background: url(../image/resto1.jpg) no-repeat center/cover;
 }
 .header-pages .header-background-laNoteEnchantee {
@@ -688,7 +699,7 @@ body {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 512px;
+  height: 400px;
   background: url(../image/resto2.jpg) no-repeat center/cover;
 }
 .header-pages .header-background-aLaFrançaise {
@@ -696,7 +707,7 @@ body {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 512px;
+  height: 400px;
   background: url(../image/resto3.jpg) no-repeat center/cover;
 }
 .header-pages .header-background-leDeliceDesSens {
@@ -704,7 +715,7 @@ body {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 512px;
+  height: 400px;
   background: url(../image/resto4.jpg) no-repeat center/cover;
 }
 
