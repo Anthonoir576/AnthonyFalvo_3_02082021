@@ -145,14 +145,16 @@
 
                 &:hover {
 
-                    transition: all 100ms ease-in-out;
-                    background: linear-gradient(0deg, $Primaire 10%, $Secondaire 100%);
+                    transition: all 400ms ease-in-out;
+                    background: rgba($Primaire, .2);
+                    filter: saturate(200%);
+                    
                     box-shadow: 1px 3px 6px 1px rgba(5, 5, 5, .55);
 
-                    & p {
+                    & i {
 
-                        transition: all 50ms ease-in-out;
-                        color: white;
+                        transition: all 400ms ease-in-out;
+                        color: $Primaire;
 
                     }
 

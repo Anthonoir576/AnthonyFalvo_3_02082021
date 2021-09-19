@@ -485,13 +485,14 @@ body {
   cursor: pointer;
 }
 .header .header-contains .header-contains-choices .header-choice:hover {
-  transition: all 100ms ease-in-out;
-  background: linear-gradient(0deg, #9356DC 10%, #FF79DA 100%);
+  transition: all 400ms ease-in-out;
+  background: rgba(147, 86, 220, 0.2);
+  filter: saturate(200%);
   box-shadow: 1px 3px 6px 1px rgba(5, 5, 5, 0.55);
 }
-.header .header-contains .header-contains-choices .header-choice:hover p {
-  transition: all 50ms ease-in-out;
-  color: white;
+.header .header-contains .header-contains-choices .header-choice:hover i {
+  transition: all 400ms ease-in-out;
+  color: #9356DC;
 }
 .header .header-contains .header-contains-choices .header-choice :nth-child(1) {
   padding: 4px 9px;
