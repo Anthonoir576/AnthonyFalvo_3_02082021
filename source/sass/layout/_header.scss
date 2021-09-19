@@ -90,7 +90,7 @@
                 white-space: nowrap;
 
                 border-radius: 50px;
-                background: linear-gradient(0deg, $Primaire 10%, $Secondaire 100%);
+                background: linear-gradient(-5deg, $Primaire 10%, $Secondaire 100%);
 
                 box-shadow : 2px 5px 6px -3px rgba(0, 0, 0, 0.5);
 
@@ -146,10 +146,10 @@
                 &:hover {
 
                     transition: all 250ms ease-in-out;
-                    background: rgba($Primaire, .1);
+                    background: rgba($Primaire, .15);
                     filter: saturate(100%);
                     
-                    box-shadow: 1px 3px 6px 1px rgba(5, 5, 5, .55);
+                    box-shadow: 1px 3px 6px 1px rgba(5, 5, 5, .40);
 
                     & i {
 
