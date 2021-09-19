@@ -17,7 +17,7 @@ body {
 
 /* POLICE 'Roboto', 'Shrikhand' */
 body {
-  font-family: "Roboto", "Shrikhand", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .main-pages .main-cards .cards-menu .menu {
@@ -56,7 +56,7 @@ body {
 }
 .main-pages .main-cards .cards-menu .menu .menu-checked .checked i {
   transition: transform 0.15s ease-out;
-  transform: rotate(90deg);
+  transform: rotate(-360deg);
   background: #fff;
   color: #99e2d0;
   font-size: 16px;
@@ -86,7 +86,7 @@ body {
   opacity: 0;
 }
 .card-icon .fa.fa-heart, .cards-title .fa.fa-heart {
-  background: linear-gradient(0deg, #9356DC 10%, #FF79DA 100%);
+  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
@@ -209,13 +209,13 @@ body {
 }
 
 :root {
-  --effet: loaderEffect 1s linear infinite;
+  --effet: loaderEffect 950ms linear infinite;
 }
 
 .load-txt p {
   display: inline-block;
   text-transform: uppercase;
-  font-family: "Shrikhand", "roboto", cursive;
+  font-family: "Shrikhand", cursive;
   font-size: 4rem;
   font-weight: 600;
   transform: scale(0.5);
@@ -253,7 +253,7 @@ body {
 }
 @keyframes loaderEffect {
   0% {
-    transform: scale(0.5);
+    transform: scale(0.6);
     color: #9356DC;
   }
   20% {
@@ -261,7 +261,7 @@ body {
     color: #FF79DA;
   }
   50% {
-    transform: scale(0.5);
+    transform: scale(0.6);
     color: #9356DC;
   }
 }
@@ -345,7 +345,7 @@ body {
   transition: all 300ms;
   transform: scale(1.015);
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.6) !important;
-  filter: saturate(150%);
+  filter: saturate(125%);
 }
 
 .footer .navbar-footer .nav-list .nav-link {
@@ -372,32 +372,32 @@ body {
 }
 
 .header-pages .header-background-laPaletteDuGout {
-  transition: all 2000ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 .header-pages .header-background-laPaletteDuGout:hover {
-  transition: all 1500ms ease-in-out;
-  filter: saturate(200%);
+  transition: all 400ms ease-in-out;
+  filter: saturate(120%);
 }
 .header-pages .header-background-laNoteEnchantee {
-  transition: all 2000ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 .header-pages .header-background-laNoteEnchantee:hover {
-  transition: all 1500ms ease-in-out;
-  filter: saturate(200%);
+  transition: all 400ms ease-in-out;
+  filter: saturate(120%);
 }
 .header-pages .header-background-aLaFrançaise {
-  transition: all 2000ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 .header-pages .header-background-aLaFrançaise:hover {
-  transition: all 1500ms ease-in-out;
-  filter: saturate(200%);
+  transition: all 400ms ease-in-out;
+  filter: saturate(120%);
 }
 .header-pages .header-background-leDeliceDesSens {
-  transition: all 2000ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 .header-pages .header-background-leDeliceDesSens:hover {
-  transition: all 1500ms ease-in-out;
-  filter: saturate(200%);
+  transition: all 400ms ease-in-out;
+  filter: saturate(120%);
 }
 
 /* HEADER */
@@ -485,14 +485,15 @@ body {
   cursor: pointer;
 }
 .header .header-contains .header-contains-choices .header-choice:hover {
-  transition: all 400ms ease-in-out;
-  background: rgba(147, 86, 220, 0.2);
-  filter: saturate(200%);
+  transition: all 250ms ease-in-out;
+  background: rgba(147, 86, 220, 0.1);
+  filter: saturate(100%);
   box-shadow: 1px 3px 6px 1px rgba(5, 5, 5, 0.55);
 }
 .header .header-contains .header-contains-choices .header-choice:hover i {
-  transition: all 400ms ease-in-out;
+  transition: all 250ms ease-in-out;
   color: #9356DC;
+  filter: saturate(100%);
 }
 .header .header-contains .header-contains-choices .header-choice :nth-child(1) {
   padding: 4px 9px;

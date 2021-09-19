@@ -68,7 +68,7 @@
             & i {
 
                 transition: transform .15s ease-out;
-                transform: rotate(90deg);
+                transform: rotate(-360deg);
                 
                 background: #fff;
                 color: #99e2d0;
@@ -132,7 +132,7 @@
  
         // background: -webkit-linear-gradient(0deg, rgba(147,86,220,1) 10%, rgba(255,121,218,1) 100%);
         // background: -moz-linear-gradient(0deg, rgba(147,86,220,1) 10%, rgba(255,121,218,1) 100%);
-        background: linear-gradient(0deg, $Primaire 10%, $Secondaire 100%);
+        background: linear-gradient(180deg, $Primaire 0%, $Secondaire 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
@@ -352,7 +352,7 @@
 // stockage variable CSS 
 :root {
 
-    --effet: loaderEffect 1s linear infinite;
+    --effet: loaderEffect 950ms linear infinite;
 
 }
 
@@ -363,7 +363,7 @@
         // alignement des P pour formé le mot
         display: inline-block;
         text-transform: uppercase;
-        font-family: 'Shrikhand', 'roboto', cursive;
+        font-family: 'Shrikhand', cursive;
         font-size: 4rem;
         font-weight: 600;
         transform: scale(.5);
@@ -437,7 +437,7 @@
 
         0% {
 
-            transform: scale(.5);
+            transform: scale(.6);
             color: $Primaire;
             
         }
@@ -451,7 +451,7 @@
         
         50% {
 
-            transform: scale(.5);
+            transform: scale(.6);
             color: $Primaire;
            
         }
@@ -633,7 +633,7 @@
 
 
 
-// ####### CARD ############
+// ####### CARD HOVER ############
 .card {
 
     transition: all 500ms;
@@ -644,7 +644,7 @@
         transform: scale(1.015);
         box-shadow: 0px 5px 30px rgba(0, 0, 0, .6)!important;
 
-        filter: saturate(150%);
+        filter: saturate(125%);
 
     }
 
@@ -710,12 +710,12 @@
 
     & .header-background-laPaletteDuGout {
 
-        transition: all 2000ms ease-in-out;
+        transition: all 200ms ease-in-out;
 
         &:hover {
 
-            transition: all 1500ms ease-in-out;
-            filter: saturate(200%);
+            transition: all 400ms ease-in-out;
+            filter: saturate(120%);
 
         }
 
@@ -723,12 +723,12 @@
 
     & .header-background-laNoteEnchantee {
         
-        transition: all 2000ms ease-in-out;
+        transition: all 200ms ease-in-out;
 
         &:hover {
 
-            transition: all 1500ms ease-in-out;
-            filter: saturate(200%);
+            transition: all 400ms ease-in-out;
+            filter: saturate(120%);
 
         }
 
@@ -737,12 +737,12 @@
     
     & .header-background-aLaFrançaise {
         
-        transition: all 2000ms ease-in-out;
+        transition: all 200ms ease-in-out;
 
         &:hover {
 
-            transition: all 1500ms ease-in-out;
-            filter: saturate(200%);
+            transition: all 400ms ease-in-out;
+            filter: saturate(120%);
 
         }
 
@@ -750,12 +750,12 @@
 
     & .header-background-leDeliceDesSens {
 
-        transition: all 2000ms ease-in-out;
+        transition: all 200ms ease-in-out;
 
         &:hover {
 
-            transition: all 1500ms ease-in-out;
-            filter: saturate(200%);
+            transition: all 400ms ease-in-out;
+            filter: saturate(120%);
 
         }
 

@@ -132,7 +132,7 @@
 
                 width: 100%;
                 white-space: nowrap;
-
+                
                 padding: 25px 30px 25px 10px;
 
                 background: $Grey;
@@ -145,16 +145,17 @@
 
                 &:hover {
 
-                    transition: all 400ms ease-in-out;
-                    background: rgba($Primaire, .2);
-                    filter: saturate(200%);
+                    transition: all 250ms ease-in-out;
+                    background: rgba($Primaire, .1);
+                    filter: saturate(100%);
                     
                     box-shadow: 1px 3px 6px 1px rgba(5, 5, 5, .55);
 
                     & i {
 
-                        transition: all 400ms ease-in-out;
+                        transition: all 250ms ease-in-out;
                         color: $Primaire;
+                        filter: saturate(100%);
 
                     }
 
