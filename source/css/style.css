@@ -416,13 +416,18 @@ body {
   text-align: center;
   background: #F3F3F3;
 }
-.header .header-subtitle h2 {
+.header .header-subtitle input {
   color: rgba(0, 0, 0, 0.7);
   font-size: 1.2rem;
   padding: 1.3rem 0;
   font-weight: 300;
+  outline: none;
+  border: none;
+  background: #F3F3F3;
+  padding-left: 9.7rem;
 }
 .header .header-subtitle i {
+  transform: translateX(-270px);
   margin-right: 0.5rem;
   color: rgba(0, 0, 0, 0.7);
   font-size: 1.2rem;
@@ -675,6 +680,19 @@ body {
 @media only screen and (max-width: 600px) {
   .load-txt p {
     font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .header .header-subtitle {
+    margin: 0 auto;
+  }
+  .header .header-subtitle input {
+    text-align: center;
+    width: 100%;
+    padding: 1.5rem 0rem 0rem 2rem;
+  }
+  .header .header-subtitle i {
+    transform: translate(-70px, -22px);
   }
 }
 .header-pages .header-title {

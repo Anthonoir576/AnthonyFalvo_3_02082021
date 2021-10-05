@@ -25,23 +25,26 @@
     & .header-subtitle {
 
         @include txtCenter;
-
         background: $Grey;
 
-        & h2 {
-
+        & input {
+      
             @include formColor;
             // @include pad;
             padding: 1.3rem 0;
 
             font-weight: 300;
-            
+            outline: none;
+            border: none;
+            background: $Grey;
+            padding-left: 9.7rem;
+
         }
 
         & i {
 
+            transform: translateX(-270px);
             margin-right: .5rem;
-
             @include formColor;
             
         }

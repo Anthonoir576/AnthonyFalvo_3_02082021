@@ -142,3 +142,31 @@
 
 }
 
+@media only screen and (max-width: 420px) {
+
+    .header {
+
+        & .header-subtitle {
+
+            margin: 0 auto;
+
+            & input {
+
+                text-align: center;
+
+                width: 100%;
+                padding: 1.5rem 0rem 0rem 2rem;
+
+            }
+
+            & i {
+
+                transform: translate(-70px, -22px);
+
+            }
+
+        }
+
+    }
+
+}
