@@ -509,7 +509,7 @@ body {
 }
 .header .header-contains .header-contains-choices .header-choice i {
   margin-right: 1rem;
-  font-size: 13px;
+  font-size: 16px;
   color: rgba(0, 0, 0, 0.397);
 }
 .header .header-contains .header-contains-choices .header-choice :nth-child(3) {
@@ -693,6 +693,9 @@ body {
   }
   .header .header-subtitle i {
     transform: translate(-70px, -22px);
+  }
+  .header .header-main div a {
+    padding: 15px 20px;
   }
 }
 .header-pages .header-title {
