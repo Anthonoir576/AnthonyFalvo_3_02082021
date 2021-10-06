@@ -137,12 +137,23 @@
 
 @media only screen and (max-width: 500px) {
 
-    .load-txt {
+    .load {
 
-        p {
+        & .ring {
 
-            font-size: 3rem;
+            width: 350px;
+            height: 350px;
 
+        }
+
+        & .load-txt {
+
+            p {
+    
+                font-size: 3rem;
+    
+            }
+    
         }
 
     }
@@ -151,12 +162,23 @@
 
 @media only screen and (max-width: 380px) {
 
-    .load-txt {
+    .load {
 
-        p {
+        & .ring {
 
-            font-size: 2rem;
+            width: 270px;
+            height: 270px;
 
+        }
+
+        & .load-txt {
+
+            p {
+    
+                font-size: 2.1rem;
+    
+            }
+    
         }
 
     }

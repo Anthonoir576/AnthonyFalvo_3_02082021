@@ -294,158 +294,211 @@
     
     }
 
-    // barre de progression du 0 a 100, en jouant sur la largeur et le timing
-    @keyframes progressBarAnimation {
+    // Loader OHMYFOOD    
+    .load-txt {
 
-        from {
-    
-        width: 0;
-    
-        }
-    
-        to {
-    
-            width: 100%;
-    
-        }
-    
-    }
+        p {
 
-    // contenu de la barre de chargement
-    & .loader-contains {
- 
-        max-width: 1000px;
-        width: 80%;
- 
-        & .progress {
+            // alignement des P pour formé le mot
+            display: inline-block;
+            text-transform: uppercase;
+            font-family: 'Shrikhand', cursive;
+            font-size: 4rem;
+            font-weight: 600;
+            transform: scale(.5);
+            color: rgba(147,86,220,1);
+
+            // attribut un une animation avec un delai sur chaque lettre pour avoir cette effet de décallage
+            &:nth-child(1) {
+
+                @include loaderTXT;
         
-            padding: 2px;
-            background: rgba(0, 0, 0, .1);
-            border-radius: 15px;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), 0 1px rgba(255, 255, 255, 0.02);
-
-            & .progress-bar {
-
-                height: 15px; 
-                border-radius: 15px; 
-                transition: 0.4s linear;   
+            }
             
+            &:nth-child(2) {
+                
+                @include loaderTXT;
+                animation-delay: .125s;
+        
+            }
+            
+            &:nth-child(3) {
+                
+                @include loaderTXT;
+                animation-delay: .250s;
+        
+            }
+            
+            &:nth-child(4) {
+                
+                @include loaderTXT;
+                animation-delay: .375s;
+        
+            }
+            
+            &:nth-child(5) {
+                
+                @include loaderTXT;
+                animation-delay: .500s;
+        
+            }
+            
+            &:nth-child(6) {
+                
+                @include loaderTXT;
+                animation-delay: .675s;
+        
+            }
+            
+            &:nth-child(7) {
+                
+                @include loaderTXT;
+                animation-delay: .750s;
+        
             }
         
-        }
-       
-        & .progress-fade .progress-bar { 
-
-            width: 100%; 
-
-            background: linear-gradient(90deg, $Primaire 10%, $Secondaire 100%);
-
-            animation: progressBarAnimation 2750ms;
-
+            &:nth-child(8) {
+                
+                @include loaderTXT;
+                animation-delay: .875s;
+        
+            }
+            
         }
         
+        // durant l'animation on rends la lettre plus petite, taille initiale, et plus petite avec des couleurs differents afin de créez cette effet de déplacement
+        @keyframes loaderEffect {
+
+            0% {
+
+                transform: scale(.5);
+                color: $Primaire;
+                
+            }
+            
+            20% {
+
+                transform: scale(1);
+                color: $Secondaire;
+            
+            }
+            
+            50% {
+
+                transform: scale(.5);
+                color: $Primaire;
+            
+            }
+            
+        }
+
     }
 
-}
+    // #### loader RING ####
+    .ring {
 
-.load-txt {
-
-    p {
-
-        // alignement des P pour formé le mot
-        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 500px;
+        height: 500px;
+        background: transparent;
+        border: 3px solid $Tertiaire;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 150px;
+        font-family: sans-serif;
+        font-size: 20px;
+        color: $Primaire;
+        letter-spacing: 4px;
         text-transform: uppercase;
-        font-family: 'Shrikhand', cursive;
-        font-size: 4rem;
-        font-weight: 600;
-        transform: scale(.5);
-        color: rgba(147,86,220,1);
-
-        // attribut un une animation avec un delai sur chaque lettre pour avoir cette effet de décallage
-        &:nth-child(1) {
-
-            @include loaderTXT;
+        text-shadow: 0 0 10px $Secondaire;
+        box-shadow: 0 0 20px rgba(153, 226, 208, 0.5);
     
-        }
-        
-        &:nth-child(2) {
-            
-            @include loaderTXT;
-            animation-delay: .125s;
+        & span {
     
-        }
-        
-        &:nth-child(3) {
-            
-            @include loaderTXT;
-            animation-delay: .250s;
-    
-        }
-        
-        &:nth-child(4) {
-            
-            @include loaderTXT;
-            animation-delay: .375s;
-    
-        }
-        
-        &:nth-child(5) {
-            
-            @include loaderTXT;
-            animation-delay: .500s;
-    
-        }
-        
-        &:nth-child(6) {
-            
-            @include loaderTXT;
-            animation-delay: .675s;
-    
-        }
-        
-        &:nth-child(7) {
-            
-            @include loaderTXT;
-            animation-delay: .750s;
+            display: block;
+            position: absolute;
+            top: calc(50% - 2px);
+            left: 50%;
+            width: 50%;
+            height: 4px;
+            background: transparent;
+            transform-origin: left;
+            animation: anime2 2s linear infinite;
     
         }
     
-        &:nth-child(8) {
-            
-            @include loaderTXT;
-            animation-delay: .875s;
+        span:before {
+    
+            content:'';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: $Secondaire;
+            top: -6px;
+            right: -8px;
+            box-shadow: 0 0 20px $Secondaire;
     
         }
-           
+    
     }
-      
-    // durant l'animation on rends la lettre plus petite, taille initiale, et plus petite avec des couleurs differents afin de créez cette effet de déplacement
-    @keyframes loaderEffect {
+
+    & .ring:before {
+
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        width: 100%;
+        height: 100%;
+        border: 3px solid transparent;
+        border-top: 3px solid $Primaire;
+        border-right: 3px solid $Secondaire;
+        border-radius: 50%;
+        animation: anime 2s linear infinite;
+
+    }
+
+    @keyframes anime {
 
         0% {
 
-            transform: scale(.5);
-            color: $Primaire;
-            
-        }
-        
-        20% {
+            transform: rotate(0deg);
 
-            transform: scale(1);
-            color: $Secondaire;
-           
         }
-        
-        50% {
 
-            transform: scale(.5);
-            color: $Primaire;
-           
+        100% {
+
+            transform: rotate(360deg);
+
         }
-        
+
     }
 
+    @keyframes anime2 {
+
+        0% {
+
+            transform: rotate(45deg);
+
+        } 
+        
+        100% {
+
+            transform: rotate(405deg);
+            
+        }
+    
+    }
+    // #####################
+
 }
+
+
+
 // ###################################################################
 
 
