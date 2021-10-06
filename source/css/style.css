@@ -267,8 +267,7 @@ body {
 }
 
 .itemAnimation {
-  animation: itemMenu 1s cubic-bezier(0.5, 1.58, 0.34, 0.82) forwards;
-  opacity: 0;
+  animation: itemMenu 1s cubic-bezier(0.5, 1.58, 0.34, 0.82) both;
 }
 
 .main-cards .cards-menu .delay-01 {
@@ -304,16 +303,15 @@ body {
 
 @keyframes itemMenu {
   0% {
-    transform: scale(0);
     opacity: 0;
+    transform: translate3d(0, 100%, 0);
   }
   50% {
-    transform: scale(1.01);
-    opacity: 1;
+    opacity: 0.5;
   }
   100% {
-    transform: scale(1);
     opacity: 1;
+    transform: none;
   }
 }
 .header .header-main div a {

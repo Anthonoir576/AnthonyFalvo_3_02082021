@@ -469,8 +469,7 @@
 // MENU APPARITION
 .itemAnimation {
 
-    animation: itemMenu 1s cubic-bezier(.5,1.58,.34,.82) forwards;
-    opacity: 0;
+    animation: itemMenu 1s cubic-bezier(.5,1.58,.34,.82) both;
 
 }
 
@@ -554,26 +553,26 @@
 
     0% {
 
-        transform: scale(0);
         opacity: 0;
+        transform: translate3d(0, 100%, 0);
 
     }
 
     50% {
 
-        transform: scale(1.01);
-        opacity: 1;
+        opacity: .5;
+        
 
     }
 
     100% {
-
-        transform: scale(1);
         opacity: 1;
+        transform: none;
     
     }
 } 
    
+
 
 
  
