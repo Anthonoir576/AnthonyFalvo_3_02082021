@@ -313,8 +313,7 @@
 
     // contenu de la barre de chargement
     & .loader-contains {
-
-        
+ 
         max-width: 1000px;
         width: 80%;
  
@@ -349,13 +348,6 @@
 
 }
 
-// stockage variable CSS 
-:root {
-
-    --effet: loaderEffect 950ms linear infinite;
-
-}
-
 .load-txt {
 
     p {
@@ -364,7 +356,7 @@
         display: inline-block;
         text-transform: uppercase;
         font-family: 'Shrikhand', cursive;
-        font-size: 4rem;
+        font-size: 8rem;
         font-weight: 600;
         transform: scale(.5);
         color: rgba(147,86,220,1);
@@ -372,64 +364,59 @@
         // attribut un une animation avec un delai sur chaque lettre pour avoir cette effet de décallage
         &:nth-child(1) {
 
-            animation: var(--effet);
+            @include loaderTXT;
     
         }
         
         &:nth-child(2) {
-    
-            animation: var(--effet) .125s;
+            
+            @include loaderTXT;
+            animation-delay: .125s;
     
         }
         
         &:nth-child(3) {
-    
-            animation: var(--effet) .25s;
+            
+            @include loaderTXT;
+            animation-delay: .250s;
     
         }
         
         &:nth-child(4) {
-    
-            animation: var(--effet) .375s;
+            
+            @include loaderTXT;
+            animation-delay: .375s;
     
         }
         
         &:nth-child(5) {
-    
-            animation: var(--effet) .5s;
+            
+            @include loaderTXT;
+            animation-delay: .500s;
     
         }
         
         &:nth-child(6) {
-    
-            animation: var(--effet) .675s;
+            
+            @include loaderTXT;
+            animation-delay: .675s;
     
         }
         
         &:nth-child(7) {
-    
-            animation: var(--effet) .75s;
+            
+            @include loaderTXT;
+            animation-delay: .750s;
     
         }
     
         &:nth-child(8) {
-    
-            animation: var(--effet) .875s;
-    
-        }
-    
-        &:nth-child(9) {
-    
-            animation: var(--effet) 1000ms;
+            
+            @include loaderTXT;
+            animation-delay: .875s;
     
         }
-    
-        &:nth-child(10) {
-    
-            animation: var(--effet) 1175ms;
-    
-        }
-        
+           
     }
       
     // durant l'animation on rends la lettre plus petite, taille initiale, et plus petite avec des couleurs differents afin de créez cette effet de déplacement
@@ -437,7 +424,7 @@
 
         0% {
 
-            transform: scale(.6);
+            transform: scale(.5);
             color: $Primaire;
             
         }
@@ -451,7 +438,7 @@
         
         50% {
 
-            transform: scale(.6);
+            transform: scale(.5);
             color: $Primaire;
            
         }
@@ -469,8 +456,8 @@
 // MENU APPARITION
 .itemAnimation {
 
-    animation: itemMenu 1s cubic-bezier(.5,1.58,.34,.82) both;
-
+    animation: itemMenu 1s ease-in-out both;
+    // cubic-bezier(.5,1.58,.34,.82)
 }
 
 // delay personnalisé pour chaque item du menu 
@@ -558,14 +545,26 @@
 
     }
 
+    25% {
+
+        opacity: .25;
+
+    }
+
     50% {
 
         opacity: .5;
         
+    }
+
+    75% {
+
+        opacity: .75;
 
     }
 
     100% {
+
         opacity: 1;
         transform: none;
     
@@ -704,61 +703,4 @@
 }
 
 
-// ######### hover sur HERO COVER de chaque page #############
-.header-pages {
-
-    & .header-background-laPaletteDuGout {
-
-        transition: all 200ms ease-in-out;
-
-        &:hover {
-
-            transition: all 400ms ease-in-out;
-            filter: saturate(120%);
-
-        }
-
-    }
-
-    & .header-background-laNoteEnchantee {
-        
-        transition: all 200ms ease-in-out;
-
-        &:hover {
-
-            transition: all 400ms ease-in-out;
-            filter: saturate(120%);
-
-        }
-
-    }
-
-    
-    & .header-background-aLaFrançaise {
-        
-        transition: all 200ms ease-in-out;
-
-        &:hover {
-
-            transition: all 400ms ease-in-out;
-            filter: saturate(120%);
-
-        }
-
-    }
-
-    & .header-background-leDeliceDesSens {
-
-        transition: all 200ms ease-in-out;
-
-        &:hover {
-
-            transition: all 400ms ease-in-out;
-            filter: saturate(120%);
-
-        }
-
-    }
-
-}
 

@@ -208,52 +208,49 @@ body {
   animation: progressBarAnimation 2750ms;
 }
 
-:root {
-  --effet: loaderEffect 950ms linear infinite;
-}
-
 .load-txt p {
   display: inline-block;
   text-transform: uppercase;
   font-family: "Shrikhand", cursive;
-  font-size: 4rem;
+  font-size: 8rem;
   font-weight: 600;
   transform: scale(0.5);
   color: #9356dc;
 }
 .load-txt p:nth-child(1) {
-  animation: var(--effet);
+  animation: loaderEffect 950ms ease-in-out infinite;
 }
 .load-txt p:nth-child(2) {
-  animation: var(--effet) 0.125s;
+  animation: loaderEffect 950ms ease-in-out infinite;
+  animation-delay: 0.125s;
 }
 .load-txt p:nth-child(3) {
-  animation: var(--effet) 0.25s;
+  animation: loaderEffect 950ms ease-in-out infinite;
+  animation-delay: 0.25s;
 }
 .load-txt p:nth-child(4) {
-  animation: var(--effet) 0.375s;
+  animation: loaderEffect 950ms ease-in-out infinite;
+  animation-delay: 0.375s;
 }
 .load-txt p:nth-child(5) {
-  animation: var(--effet) 0.5s;
+  animation: loaderEffect 950ms ease-in-out infinite;
+  animation-delay: 0.5s;
 }
 .load-txt p:nth-child(6) {
-  animation: var(--effet) 0.675s;
+  animation: loaderEffect 950ms ease-in-out infinite;
+  animation-delay: 0.675s;
 }
 .load-txt p:nth-child(7) {
-  animation: var(--effet) 0.75s;
+  animation: loaderEffect 950ms ease-in-out infinite;
+  animation-delay: 0.75s;
 }
 .load-txt p:nth-child(8) {
-  animation: var(--effet) 0.875s;
-}
-.load-txt p:nth-child(9) {
-  animation: var(--effet) 1000ms;
-}
-.load-txt p:nth-child(10) {
-  animation: var(--effet) 1175ms;
+  animation: loaderEffect 950ms ease-in-out infinite;
+  animation-delay: 0.875s;
 }
 @keyframes loaderEffect {
   0% {
-    transform: scale(0.6);
+    transform: scale(0.5);
     color: #9356DC;
   }
   20% {
@@ -261,13 +258,13 @@ body {
     color: #FF79DA;
   }
   50% {
-    transform: scale(0.6);
+    transform: scale(0.5);
     color: #9356DC;
   }
 }
 
 .itemAnimation {
-  animation: itemMenu 1s cubic-bezier(0.5, 1.58, 0.34, 0.82) both;
+  animation: itemMenu 1s ease-in-out both;
 }
 
 .main-cards .cards-menu .delay-01 {
@@ -306,8 +303,14 @@ body {
     opacity: 0;
     transform: translate3d(0, 100%, 0);
   }
+  25% {
+    opacity: 0.25;
+  }
   50% {
     opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
   }
   100% {
     opacity: 1;
@@ -367,35 +370,6 @@ body {
   width: 33%;
   height: 1.5px;
   background: rgba(255, 255, 255, 0.774);
-}
-
-.header-pages .header-background-laPaletteDuGout {
-  transition: all 200ms ease-in-out;
-}
-.header-pages .header-background-laPaletteDuGout:hover {
-  transition: all 400ms ease-in-out;
-  filter: saturate(120%);
-}
-.header-pages .header-background-laNoteEnchantee {
-  transition: all 200ms ease-in-out;
-}
-.header-pages .header-background-laNoteEnchantee:hover {
-  transition: all 400ms ease-in-out;
-  filter: saturate(120%);
-}
-.header-pages .header-background-aLaFrançaise {
-  transition: all 200ms ease-in-out;
-}
-.header-pages .header-background-aLaFrançaise:hover {
-  transition: all 400ms ease-in-out;
-  filter: saturate(120%);
-}
-.header-pages .header-background-leDeliceDesSens {
-  transition: all 200ms ease-in-out;
-}
-.header-pages .header-background-leDeliceDesSens:hover {
-  transition: all 400ms ease-in-out;
-  filter: saturate(120%);
 }
 
 /* HEADER */

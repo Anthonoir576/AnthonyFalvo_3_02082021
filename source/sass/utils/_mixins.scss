@@ -20,6 +20,12 @@
 
 }
 
+// LOADER ohmyfood
+@mixin loaderTXT {
+
+    animation: loaderEffect 950ms ease-in-out infinite;
+
+}
 
 // LETTER SPACE a désactiver lors de la soutenance 
 @mixin letter {
