@@ -1,6 +1,8 @@
-// Les mixins, sont une notion que j'utilisais très peu sur sass. Même si ceux là sont peu utilise dans ce cas précis, j'ai voulu les inclures, afin d'apprendre a travaillé avec.
 
-// HEADER 
+// ******* MY MIXIN **********
+
+// ############################
+// HEADER => color and size
 @mixin formColor {
     
     color: rgba(0, 0, 0, .7);
@@ -8,33 +10,35 @@
 
 }
 
+// Padding
 @mixin pad {
 
     padding: 1rem 0;
 
 }
 
+// Text align
 @mixin txtCenter {
 
     text-align: center;
 
 }
 
-// LOADER ohmyfood
+// LOADER ohmyfood text
 @mixin loaderTXT {
 
     animation: loaderEffect 950ms ease-in-out infinite;
 
 }
 
-// LETTER SPACE a désactiver lors de la soutenance 
+// letter spacing
 @mixin letter {
 
     letter-spacing: 1px;
 
 }
 
-// CONFIG BG pages
+// CONFIG BG all pages
 @mixin bg-pages {
 
     display: block;
@@ -47,8 +51,7 @@
 
 }
 
-// HOVER BUTTON 
-
+// HOVER BUTTON => index & all pages
 @mixin hoverBUTTON {
 
     transition: all 250ms linear;
@@ -61,3 +64,4 @@
     box-shadow: 1px 3px 6px 1px rgba(5, 5, 5, .55);
 
 }
+// ##########################

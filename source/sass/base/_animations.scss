@@ -1,4 +1,7 @@
-// ######################### ITEM CHECKED ############################
+
+// ************************  ANIMATIONS  ***************************
+
+// #######################  ITEM CHECKED   #########################
 // CHECKED FOOD
 // Sans keyframe tenté de faire avec - resultat correct
 .main-pages .main-cards .cards-menu .menu {
@@ -84,13 +87,13 @@
     }
 
 }
+// #################################################################
 
 
 
 
 
-
-// ######################### COEUR LIKE ############################
+// ########################  COEUR LIKE  ###########################
 // Le fameux coeur 
 .card-icon, .cards-title {
 
@@ -130,8 +133,6 @@
     // PLEIN
     & .fa.fa-heart {
  
-        // background: -webkit-linear-gradient(0deg, rgba(147,86,220,1) 10%, rgba(255,121,218,1) 100%);
-        // background: -moz-linear-gradient(0deg, rgba(147,86,220,1) 10%, rgba(255,121,218,1) 100%);
         background: linear-gradient(180deg, $Primaire 0%, $Secondaire 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -145,7 +146,6 @@
         right:0px;
         z-index: 1;
 
-
     }
   
 }
@@ -157,14 +157,14 @@
     top: 7px!important;
 
 }
+// #################################################################
 
 
 
 
 
 
-
-// ######################### LOADER INDEX ############################
+// ########################  LOADER INDEX  ###########################
 // LOADER 
 // div centrage + bg 
 // Permet de faire disparaitre toute la div au timing souhaitez, et ne pas le faire individuellement
@@ -446,13 +446,13 @@
     }
 
 }
+// ###################################################################
 
 
 
 
 
-
-// ######################### MENU APPARITION ############################
+// #######################  MENU APPARITION  ########################
 // MENU APPARITION
 .itemAnimation {
 
@@ -570,7 +570,7 @@
     
     }
 } 
-   
+// #################################################################   
 
 
 
@@ -578,7 +578,7 @@
 
 
 
-// ######################### HOVER BUTTON and other ############################
+// ################    HOVER BUTTON and other    ###################
 // ######## BUTTON INDEX ##########
 .header {
 
@@ -629,8 +629,6 @@
 
 }
 
-
-
 // ####### CARD HOVER ############
 .card {
 
@@ -647,7 +645,6 @@
     }
 
 }
-
 
 // ########## Footer animation NAVIGATION ############
 .footer {
@@ -701,6 +698,6 @@
     }
 
 }
-
+// ################################################################# 
 
 
