@@ -300,11 +300,14 @@
         p {
 
             // alignement des P pour formé le mot
-            display: inline-block;
+            display: block;
+            text-align: center;
+            padding-left: 60px;
             text-transform: uppercase;
+            letter-spacing: 70px;
             font-family: 'Shrikhand', cursive;
             font-size: 4rem;
-            font-weight: 600;
+            font-weight: 400;
             transform: scale(.5);
             color: rgba(147,86,220,1);
 

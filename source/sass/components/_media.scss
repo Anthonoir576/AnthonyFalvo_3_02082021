@@ -135,22 +135,24 @@
 
 // ########## LOADER INDEX  ###########
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
 
     .load {
 
         & .ring {
 
-            width: 350px;
-            height: 350px;
+            width: 340px;
+            height: 340px;
 
         }
 
         & .load-txt {
 
             p {
-    
-                font-size: 3rem;
+                
+                letter-spacing: 40px;
+                padding-left: 30px;
+                font-size: 2.5rem;
     
             }
     
@@ -174,7 +176,8 @@
         & .load-txt {
 
             p {
-    
+                
+                letter-spacing: 30px;
                 font-size: 2.1rem;
     
             }
