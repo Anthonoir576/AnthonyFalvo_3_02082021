@@ -26,20 +26,25 @@
 
     & .header-subtitle {
 
-        @include txtCenter;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
         background: $Grey;
 
         & input {
       
             @include formColor;
-            // @include pad;
             padding: 1.3rem 0;
+            width: 133px;
 
-            font-weight: 300;
+            text-align: left;
+            font-size: 1.15rem;
+            font-weight: 400;
             outline: none;
             border: none;
             background: $Grey;
-            padding-left: 9.7rem;
+            
 
             &::placeholder {
 
@@ -50,9 +55,10 @@
         }
 
         & i {
-
-            transform: translateX(-270px);
-            margin-right: .5rem;
+            
+            text-align: left;
+            width: 30px;
+            transform: translateY(-2px);
             @include formColor;
             
         }
