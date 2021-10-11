@@ -294,7 +294,7 @@
 
 
 
-    
+
     // Loader OHMYFOOD    
     .load-txt {
 
@@ -323,17 +323,15 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-
         width: 500px;
         height: 500px;
+
         background: transparent;
         border: 3px solid $Tertiaire;
         border-radius: 50%;
-        line-height: 150px;
-        color: $Primaire;
         box-shadow: 0 0 20px rgba(153, 226, 208, 0.5);
         
-        // Rond (point) de suivi dans l'anneau
+        // Rond (point) animation
         & span {
             
             display: block;
@@ -348,7 +346,8 @@
             animation: pointMoove 2s linear infinite;
     
         }
-    
+        
+        // Rond (point) de suivi dans l'anneau => format
         span:before {
     
             content: '';
@@ -366,7 +365,7 @@
     
     }
 
-    // ajout couleur a l'anneau
+    // ajout couleur a l'anneau en mouvement
     & .ring:before {
 
         content: '';
