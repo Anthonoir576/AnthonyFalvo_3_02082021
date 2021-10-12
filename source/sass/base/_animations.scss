@@ -9,11 +9,13 @@
     max-height: 73px;
     overflow: hidden;
 
+
     &:hover {
 
         & .menu-checked {
 
             transition: .5s cubic-bezier(.3,.54,.51,1.14);
+            // VALEUR FINAL
             flex-basis: 5rem;
             transform: translateX(0px);
     
@@ -48,11 +50,11 @@
 
     & .menu-checked {
 
-        display: flex;  // flex
+        display: flex;
         align-items: center;
         justify-content: center;  
 
-
+        // VALEUR INITIALE
         flex-basis: 0%;
 
         height: 73px;
@@ -167,9 +169,9 @@
 // ########################  LOADER INDEX  ###########################
 // LOADER 
 // div centrage + bg 
-// Permet de faire disparaitre toute la div au timing souhaitez, et ne pas le faire individuellement
 .load {
 
+    // ############  BG  #############
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -291,7 +293,7 @@
         }
     
     }
-
+    // ###############################
 
 
 
@@ -315,7 +317,7 @@
         }
     }
 
-    // ##### loader RING ######
+    // ######## loader RING #########
     .ring {
 
         // position anneau + couleur de base 
@@ -331,25 +333,43 @@
         border-radius: 50%;
         box-shadow: 0 0 20px rgba(153, 226, 208, 0.5);
         
-        // Rond (point) animation
-        & span {
-            
-            display: block;
-            position: absolute;
-            top: calc(50% - 2px);
-            left: 50%;
-            width: 50%;
-            height: 4px;
+        // ajout couleur a l'anneau en mouvement
+        &:before {
 
-            background: transparent;
-            transform-origin: left;
-            animation: pointMoove 2s linear infinite;
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            width: 100%;
+            height: 100%;
+    
+            border: 3px solid transparent;
+            border-top: 3px solid $Primaire;
+            border-right: 3px solid $Secondaire;
+            border-radius: 50%;
+            animation: borderMoove 2s linear infinite;
     
         }
-        
+       
+    }
+
+    // Rond (point) animation
+    & span {
+            
+        display: block;
+        position: absolute;
+        top: calc(50% - 2px);
+        left: 50%;
+        width: 50%;
+        height: 4px;
+
+        background: transparent;
+        transform-origin: left;
+        animation: pointMoove 2s linear infinite;
+
         // Rond (point) de suivi dans l'anneau => format
-        span:before {
-    
+        &:before {
+
             content: '';
             position: absolute;
             top: -6px;
@@ -360,29 +380,11 @@
             border-radius: 50%;
             background: $Secondaire;
             box-shadow: 0 0 20px $Secondaire;
-    
+
         }
     
     }
-
-    // ajout couleur a l'anneau en mouvement
-    & .ring:before {
-
-        content: '';
-        position: absolute;
-        top: -3px;
-        left: -3px;
-        width: 100%;
-        height: 100%;
-
-        border: 3px solid transparent;
-        border-top: 3px solid $Primaire;
-        border-right: 3px solid $Secondaire;
-        border-radius: 50%;
-        animation: borderMoove 2s linear infinite;
-
-    }
-
+    
     // bordure mouvement
     @keyframes borderMoove {
 
@@ -416,7 +418,7 @@
         }
     
     }
-    // #########################
+    // ###############################
 
 }
 
